@@ -1,10 +1,10 @@
 import { Box, Text } from '@chakra-ui/react'
 import React from 'react'
-import side from './Product.module.css';
+import styles from './Product.module.css';
 const Sidebar = () => {
   return (
-    <Box className={side.Sidebar}>
-      <Box>
+    <Box className={styles.sideBar}>
+      <Box >
         <Text borderBottom={"1px solid grey"}>C</Text>
         <Box >
 

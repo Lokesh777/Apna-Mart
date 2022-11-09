@@ -10,7 +10,7 @@
     width: 240px;
 
 }
-.sidBar>Box :first-child {
+.sidBar>div :first-child {
     border: 1px solid blue;
     width: 240px;
     padding: 16px;
