@@ -1,0 +1,19 @@
+
+.routeBar{
+    width: 96%;
+    margin: auto;
+    border: 1px solid red;
+    padding: 10px;
+}
+.sideBar{
+    border: 1px solid red;
+    width: 240px;
+
+}
+.sidBar>Box :first-child {
+    border: 1px solid blue;
+    width: 240px;
+    padding: 16px;
+    border-radius: 10px;
+
+}
