@@ -110,33 +110,7 @@
     "clsgetname": "Button Mushroom 200 g",
     "price-box": "₹ 37.00",
     "txt_btn": "Add to Cart"
-  },
-  {
-    "category_name": "https://www.jiomart.com/p/groceries/dragonfruit-per-pc/590007689",
-    "product-image-photo": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
-    "clsgetname": "Dragonfruit per pc (Approx 280 g - 450 g)",
-    "price-box": "₹ 65.00",
-    "txt_btn": "Add to Cart"
-  },
-  {
-    "category_name": "https://www.jiomart.com/p/groceries/capsicum-yellow-200-g/590003537",
-    "product-image-photo": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
-    "clsgetname": "Cauliflower 1 pc (Approx 600 g - 1000 g)",
-    "price-box": "₹ 29.00",
-    "txt_btn": "Add to Cart"
-  },
-  {
-    "category_name": "https://www.jiomart.com/p/groceries/orange-6-pcs-pack/590034369",
-    "product-image-photo": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
-    "clsgetname": "Orange 6 pcs (Pack) (Approx 750 g - 900 g)",
-    "price-box": "₹ 59.00",
-    "txt_btn": "Add to Cart"
-  },
-  {
-    "category_name": "https://www.jiomart.com/p/groceries/apple-indian-6-pcs-pack/590004487",
-    "product-image-photo": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
-    "clsgetname": "Apple Indian 6 pcs (Pack) (Approx 750 g - 950 g)",
-    "price-box": "₹ 99.00",
-    "txt_btn": "Add to Cart"
   }
+ 
+  
 ]
