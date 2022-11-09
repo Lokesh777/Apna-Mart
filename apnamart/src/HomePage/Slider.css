@@ -1,0 +1,188 @@
+.container-slider {
+    max-width: 100%;
+    height: 21rem;
+    position: relative;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+    margin-bottom:1rem;
+    margin-top: 8rem;
+  }
+  @media screen and (max-width: 100%){
+    .container-slider {
+      margin: 2rem 0.9rem 0;
+    }
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    translate: translateX(-50%);
+    transition: all 0.5s ease;
+   
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    
+  }
+ 
+  .active-anim {
+    opacity: 1;
+    translate: translateX(0);
+  }
+   
+  .btn-slide {
+    width: 2.9rem;
+    height: 5rem;
+    background-color:#ffffff;
+    border: 1px solid rgba(34, 34, 34, 0.287);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+  .prev {
+    top: 50%;
+    left:0.1rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    transform: translateY(-60%);
+  }
+  .next {
+    top: 50%;
+    right: 0.1rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    transform: translateY(-60%);
+  }
+  
+  
+  .container-dots {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .dot {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: 0.1rem solid #f1f1f1;
+    margin: 0 0.2rem;
+    background: #f1f1f1;
+  }
+  .dot.active {
+    background: rgb(32, 32, 32);
+  }
+
+/* 
+  -----------------Below Slider---------- */
+
+  .belowSlider{
+    width:84.2rem;
+    height:40rem;
+    border: 1px solid black;
+
+  }
+.img-s{
+  width:84.5rem;
+}
+
+.vicks{
+  border: 1px solid red;
+  height:10rem;
+  width:84.2rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.img-vick{
+  width:84.5rem;
+  height:10rem;
+}
+
+.hotest{
+  height:40rem;
+  width:100%;
+}
+.hotest-deal{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin-left: 2rem;
+}
+
+.kids-small{
+  height:20rem;
+  width:100%;
+  margin: auto;
+  margin-bottom: 5rem;
+  }
+  .kids-fashion{
+    display: flex;
+    margin: auto;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+  }
+  .kids{
+    width: 30rem;
+  }
+
+
+.men-img{
+  height:30rem;
+  width:100%;
+  margin: auto;
+  }
+
+  .men-f{
+    display:grid;
+    grid-template-columns: 46% 46%;
+    grid-gap:2rem;
+        margin: auto;
+        margin-left: 3rem;
+  }
+  
+  .text{
+    color:black;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+.mens-small{
+height:20rem;
+width:100%;
+margin: auto;
+margin-bottom: 5rem;
+}
+.mens-fashion{
+  display: flex;
+  margin: auto;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+}
+.fashion{
+  width: 30rem;
+}
+.mmm{
+  width: 100%;
+}
+
+.poster-img{
+height:72rem;
+width:100%;
+margin: auto;
+}
+
+.above-footer{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 1rem;
+}
+.poster{
+  margin: 1rem ;
+}
