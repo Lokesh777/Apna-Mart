@@ -85,7 +85,7 @@ const AllProducts = () => {
                   Add to Cart{" "}
                 </Text>
 
-                {/* <Button borderRadius={"50%"} border="1px solid white">+</Button> */}
+                
                 <AddIcon
                   borderRadius={"50%"}
                   border="1px solid grey"
