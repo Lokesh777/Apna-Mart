@@ -7,7 +7,7 @@
 }
 .sideBar{
     border: 1px solid red;
-    width: 240px;
+    width: 20%;
 
 }
 .sidBar>div :first-child {
