@@ -11,8 +11,14 @@ import React from "react";
 import fruit from "./fruits.json";
 
 import { AddIcon } from "@chakra-ui/icons";
+import { useState } from "react";
 
 const AllProducts = () => {
+
+  const [state , setState] = useState(true);
+  const toggleButton = () =>{
+    setState(!state)
+  }
   console.log(fruit);
   return (
     <Box
@@ -41,7 +47,7 @@ const AllProducts = () => {
             <Box key={i} borderRadius={"8px"} border="1px solid green">
               <Box w="160px" h="160px" m="auto" border="1px solid grey" mt="5">
                 <Image
-                  _hover={{ w: "160px", h: "160px", transition: "0.4s" }}
+                  _hover={{ w: "160px", h: "160px", transition: "0.4s", cursor:"pointer"}}
                   src={ele["product-image-photo"]}
                   alt={ele.clsgetname}
                   w="150px"
@@ -54,20 +60,21 @@ const AllProducts = () => {
                 <Text
                   fontFamily={"Arial Black"}
                   textAlign="start"
-                  fontSize={{lg:"1vw",md:"12px"}}
+                  fontSize={{lg:"1vw",md:"12px", sm:"10px", base:"10px"}}
                 >
                   {ele.clsgetname}
                 </Text>
               </Box>
 
               <HStack h="37px">
-                <Text fontSize={"13px"}>M.R.P: </Text>
-                <Text fontSize="16px" fontFamily="Arial Black">
+                <Text fontSize={{lg:"1vw",md:"12px", sm:"10px", base:"10px"}}>M.R.P: </Text>
+                <Text fontSize={{lg:"16px",md:"14px", sm:"12px", base:"10px"}} fontFamily="Arial Black">
                   {" "}
                   {ele["price-box"]}
                 </Text>
               </HStack>
-              <Box
+              {state ? 
+                <Box
                 bg=" #008ECC"
                 w="144px"
                 h="37px"
@@ -80,6 +87,8 @@ const AllProducts = () => {
                gap="5"
                 mb="7"
                 mt="4"
+              _hover={{cursor:"pointer"}}
+              onClick = {toggleButton}
               >
                 <Text ml="3" mt="2" >
                   Add to Cart{" "}
@@ -93,7 +102,62 @@ const AllProducts = () => {
                   boxSize="5"
                   mt="2"
                 />
-              </Box>
+              </Box> :
+              <Box
+              bg="white"
+              w="144px"
+              h="37px"
+              fontSize={"14px"}
+              margin="auto"
+              fontFamily="Arial Black"
+              borderRadius={"4px"}
+              color="white"
+              display={"flex"}
+             gap="5"
+              mb="7"
+              mt="4"
+            _hover={{cursor:"pointer"}}
+            onClick = {toggleButton}
+            >
+           <AddIcon
+                borderRadius={"50%"}
+                border="1px solid grey"
+                p="3px"
+                boxSize="5"
+                mt="2"
+                color="#008ECC"
+              />
+            </Box>
+              }
+
+              {/* <Box
+                bg=" #008ECC"
+                w="144px"
+                h="37px"
+                fontSize={"14px"}
+                margin="auto"
+                fontFamily="Arial Black"
+                borderRadius={"4px"}
+                color="white"
+                display={"flex"}
+               gap="5"
+                mb="7"
+                mt="4"
+              _hover={{cursor:"pointer"}}
+              >
+                <Text ml="3" mt="2" >
+                  Add to Cart{" "}
+                </Text>
+
+                
+                <AddIcon
+                  borderRadius={"50%"}
+                  border="1px solid grey"
+                  p="3px"
+                  boxSize="5"
+                  mt="2"
+                />
+              </Box> */}
             </Box>
           ))}
         </Grid>
