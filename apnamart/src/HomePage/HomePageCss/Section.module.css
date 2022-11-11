@@ -1,40 +1,52 @@
-.belowSlider{
-    width:90rem;
-    height:40rem;
-    border: 1px solid black;
+/* *{
+  padding: 0%;
+  margin: 0.1px;
+} */
+/* // on giving this one card comes down */
 
+.belowSlider{
+    width:98%;
+    height:35rem;
   }
+
+  
 .imgie{
-  width:84.5rem;
+  width:80%;
+  justify-content: center;
+  align-content: center;
+  height:35rem;
+ 
+
   
 }
 .imgie1{
-  border: 1px solid red;
-  margin: 0px 10rem 0 4rem;
+  
+  margin: 0px;
   cursor: pointer;
+  margin-left: 1rem;
   
  
 }
 
 .imgie2{
-  border: 1px solid red;
-  margin: 0px 10rem 0 4rem;
+  
+  margin: 0px;;
   cursor: pointer;
+  margin-left: 1rem;
  
 }
-
-.vicks{
-  border: 1px solid red;
-  height:10rem;
-  width:84.2rem;
-  margin-top: 6rem;
-  margin-bottom: 4rem;
+.trends{
+  width:93rem;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  margin-left: 1rem;
+  
 }
 
-.imgvick{
-  width:84.5rem;
-  height:10rem;
-}
+
+
+
 
 
 
@@ -140,12 +152,17 @@ transform: scale(1.1);
 transform: scale(1.1);
   }
 
+  .topDeals{
+    border: 1px solid red;
+    margin-left: 1rem;
+  }
+
 
   .text{
     color:black;
     font-size: 1.3rem;
     font-weight: 700;
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-bottom: 1rem;
   }
 

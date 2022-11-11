@@ -31,6 +31,39 @@ const Section = () => {
       </div>
 
       <ShopCategory />
+      <div className={styles.topDeals}>
+        <h3 class={styles.text}>Top Deals</h3>
+        <MultipleSlide />
+      </div>
+      {/*Trending SmartPhones */}
+      <div className={styles.topDeals}>
+        <h3 class={styles.text}>Trending SmartPhones</h3>
+        <TrendingSmartPhones />
+      </div>
+      <div className={styles.topDeals}>
+        <h3 class={styles.text}>Top Mobile Brands</h3>
+        <TopMobileBrands />
+      </div>
+      <Link to="/groceries">
+        <div className={styles.groceries}>
+          <h3 class={styles.text}>Offers on daily essentials</h3>
+
+          <div className={styles.groceriesD}>
+            {groceries.map((grow) => (
+              <div className="deal">
+                <div className={styles.Choco}>
+                  <img
+                    className={styles.groom}
+                    style={{ border: "1rem" }}
+                    src={grow.image}
+                    alt={grow.n}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };

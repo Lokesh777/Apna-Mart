@@ -1,13 +1,16 @@
+
 .shopm{
-    /* border:1px solid red; */
-    height:14rem;
-    width:100%;
-    margin-top: 1rem;
+   
+    
+    width:99%;
+    /* margin-top: 1rem;
+    margin-left: 2rem; */;
+    border: 1px solid red;
 
 }
 .tim{
     color:black;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     margin-bottom: 1rem;
     margin-left: 1.3rem;
