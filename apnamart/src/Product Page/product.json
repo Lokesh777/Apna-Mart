@@ -1,0 +1,507 @@
+
+  [{
+    "fruit" :   [
+      {
+       "category_name": "https://www.jiomart.com/p/groceries/lentil-sprouts-200-g/590003515",
+       "image": "https://www.jiomart.com/images/product/150x150/590003515/onion-1-kg-product-images-o590003515-p590003515-0-202203170724.jpg",
+       "title": "Onion 1 kg",
+       "price": "₹ 40.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/sweet-corn-1-pc/590001266",
+       "image": "https://www.jiomart.com/images/product/150x150/590001266/sweet-corn-1-pc-approx-250-g-450-g-product-images-o590001266-p590001266-0-202203170359.jpg",
+       "title": "Sweet Corn 1 pc (Approx 250 g - 450 g)",
+       "price": "₹ 18.00",
+       "button": ""
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/coconut-1-pc/590000086",
+       "image": "https://www.jiomart.com/images/product/150x150/590000086/coconut-1-pc-approx-350-g-600-g-product-images-o590000086-p590000086-0-202203170206.jpg",
+       "title": "Coconut 1 pc (Approx 350 g - 600 g)",
+       "price": "₹ 27.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/amaranthus-1-bunch/590003517",
+       "image": "https://www.jiomart.com/images/product/150x150/590003517/tomato-1-kg-product-images-o590003517-p590003517-0-202203170629.jpg",
+       "title": "Tomato 1 kg",
+       "price": "₹ 29.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/tender-coconut-per-piece/590003564",
+       "image": "https://www.jiomart.com/images/product/150x150/590003564/tender-coconut-cling-wrapped-1-pc-approx-900-g-1300-g-product-images-o590003564-p590003564-0-202203151146.jpg",
+       "title": "Tender Coconut Cling Wrapped (1 pc) (Approx 900 g - 1300 g)",
+       "price": "₹ 49.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/tapioca-1-kg/590003516",
+       "image": "https://www.jiomart.com/images/product/150x150/590003516/potato-per-kg-product-images-o590003516-p590003516-0-202203170642.jpg",
+       "title": "Potato per kg",
+       "price": "₹ 39.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/pineapple-queen-1-pc/590000070",
+       "image": "https://www.jiomart.com/images/product/150x150/590000070/pineapple-queen-1-pc-approx-700-g-1200-g-product-images-o590000070-p590000070-0-202203170357.jpg",
+       "title": "Pineapple Queen 1 pc (Approx 700 g - 1200 g)",
+       "price": "₹ 44.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/banana-red-box/590034084",
+       "image": "https://www.jiomart.com/images/product/150x150/590000059/banana-red-box-approx-800-g-1000-g-product-images-o590000059-p590034084-0-202203170221.jpg",
+       "title": "Banana Red (Box) (Approx 800 g - 1000 g)",
+       "price": "₹ 129.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/onion-5-kg-pack/590002136",
+       "image": "https://www.jiomart.com/images/product/150x150/590002136/onion-5-kg-pack-product-images-o590002136-p590002136-0-202203141906.jpg",
+       "title": "Onion 5 kg (Pack)",
+       "price": "₹ 195.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/tender-coconut-1-pc/590000097",
+       "image": "https://www.jiomart.com/images/product/150x150/590000097/tender-coconut-1-pc-approx-800-g-1500-g-product-images-o590000097-p590000097-0-202203170923.jpg",
+       "title": "Tender Coconut 1 pc (Approx 800 g - 1500 g)",
+       "price": "₹ 49.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/lauki-bottle-gourd-1-kg/590000174",
+       "image": "https://www.jiomart.com/images/product/150x150/590000174/lauki-bottle-gourd-1-kg-product-images-o590000174-p590000174-0-202203170512.jpg",
+       "title": "Lauki (Bottle Gourd) 1 kg",
+       "price": "₹ 29.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/mosambi-1-kg/590000448",
+       "image": "https://www.jiomart.com/images/product/150x150/590000448/mosambi-1-kg-product-images-o590000448-p590000448-0-202203170909.jpg",
+       "title": "Mosambi 1 kg",
+       "price": "₹ 79.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/dates-imported-400-g-pack/590002744",
+       "image": "https://www.jiomart.com/images/product/150x150/590002744/dates-imported-approx-400-g-500-g-product-images-o590002744-p590002744-0-202203170240.jpg",
+       "title": "Dates Imported (Approx 400 g - 500 g)",
+       "price": "₹ 175.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/banana-robusta-6-pcs-box/590001285",
+       "image": "https://www.jiomart.com/images/product/150x150/590001285/banana-robusta-6-pcs-box-approx-800-g-1100-g-product-images-o590001285-p590001285-0-202203170808.jpg",
+       "title": "Banana Robusta 6 pcs (Box) (Approx 800 g - 1100 g)",
+       "price": "₹ 41.00",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/bhendi-okra-per-kg/590003550",
+       "image": "https://www.jiomart.com/images/product/150x150/590003550/bhendi-okra-500-g-product-images-o590003550-p590003550-0-202203170339.jpg",
+       "title": "Bhendi (Okra) 250 g",
+       "price": "₹ 10.50",
+       "button": "Add to Cart"
+     },
+     {
+       "category_name": "https://www.jiomart.com/p/groceries/mushroom-200-g-pack/590000245",
+       "image": "https://www.jiomart.com/images/product/150x150/590000245/button-mushroom-200-g-product-images-o590000245-p590000245-0-202203151749.jpg",
+       "title": "Button Mushroom 200 g",
+       "price": "₹ 37.00",
+       "button": "Add to Cart"
+     }
+   ],
+   "freshFruis" : [
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/tender-coconut-per-piece/590003564",
+      "image": "https://www.jiomart.com/images/product/150x150/590003564/tender-coconut-cling-wrapped-1-pc-approx-900-g-1300-g-product-images-o590003564-p590003564-0-202203151146.jpg",
+      "title": "Tender Coconut Cling Wrapped (1 pc) (Approx 900 g - 1300 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 57.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/pineapple-queen-1-pc/590000070",
+      "image": "https://www.jiomart.com/images/product/150x150/590000070/pineapple-queen-1-pc-approx-700-g-1200-g-product-images-o590000070-p590000070-0-202203170357.jpg",
+      "title": "Pineapple Queen 1 pc (Approx 700 g - 1200 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 45.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/banana-red-box/590034084",
+      "image": "https://www.jiomart.com/images/product/150x150/590000059/banana-red-box-approx-800-g-1000-g-product-images-o590000059-p590034084-0-202203170221.jpg",
+      "title": "Banana Red (Box) (Approx 800 g - 1000 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 129.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/tender-coconut-1-pc/590000097",
+      "image": "https://www.jiomart.com/images/product/150x150/590000097/tender-coconut-1-pc-approx-800-g-1500-g-product-images-o590000097-p590000097-0-202203170923.jpg",
+      "title": "Tender Coconut 1 pc (Approx 800 g - 1500 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 52.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/mosambi-1-kg/590000448",
+      "image": "https://www.jiomart.com/images/product/150x150/590000448/mosambi-1-kg-product-images-o590000448-p590000448-0-202203170909.jpg",
+      "title": "Mosambi 1 kg",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 79.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/dates-imported-400-g-pack/590002744",
+      "image": "https://www.jiomart.com/images/product/150x150/590002744/dates-imported-approx-400-g-500-g-product-images-o590002744-p590002744-0-202203170240.jpg",
+      "title": "Dates Imported (Approx 400 g - 500 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 175.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/banana-robusta-6-pcs-box/590001285",
+      "image": "https://www.jiomart.com/images/product/150x150/590001285/banana-robusta-6-pcs-box-approx-800-g-1100-g-product-images-o590001285-p590001285-0-202203170808.jpg",
+      "title": "Banana Robusta 6 pcs (Box) (Approx 800 g - 1100 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 41.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/orange-6-pcs-pack/590034369",
+      "image": "https://www.jiomart.com/images/product/150x150/590001738/orange-6-pcs-pack-approx-750-g-900-g-product-images-o590001738-p590034369-0-202203150755.jpg",
+      "title": "Orange 6 pcs (Pack) (Approx 750 g - 900 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 69.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/apple-indian-6-pcs-pack/590004487",
+      "image": "https://www.jiomart.com/images/product/150x150/590004487/apple-indian-6-pcs-pack-approx-750-g-950-g-product-images-o590004487-p590004487-0-202203170227.jpg",
+      "title": "Apple Indian 6 pcs (Pack) (Approx 750 g - 950 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 119.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/mosambi-3-kg-pack/590032918",
+      "image": "https://www.jiomart.com/images/product/150x150/590006806/mosambi-3-kg-pack-product-images-o590006806-p590032918-0-202203150754.jpg",
+      "title": "Mosambi 3 kg (Pack)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 229.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/watermelon-kiran-1-pc/590041413",
+      "image": "https://www.jiomart.com/images/product/150x150/590001265/watermelon-kiran-1-pc-approx-2300-g-3000-g-product-images-o590001265-p590041413-0-202203142036.jpg",
+      "title": "Watermelon Kiran Big 1 pc (Approx. 2800 g - 4000 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 128.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/tender-coconut-3-pcs/591041745",
+      "image": "https://www.jiomart.com/images/product/150x150/590009785/tender-coconut-3-pcs-product-images-o590009785-p591041745-0-202203171040.jpg",
+      "title": "Tender Coconut 3 pcs",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 159.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/orange-imported-1-kg/590000025",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "title": "Orange Imported 1 kg",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 142.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/papaya-each/590001247",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "title": "Papaya (Each) (Approx. 800 g - 1600 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 69.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/musk-melon-1-pc-approx-600-g-900-g/591217775",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "title": "Musk Melon 1 pc (Approx. 600 g - 900 g)",
+      "drug-varients": "RELIANCE",
+      "price": "₹ 69.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/banana-yellaki-12-pcs/590041069",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "title": "Banana Yellaki 12 pcs (Approx 750 g - 1000 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 119.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/sweet-tamarind-250-g-590008788/590000695",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "title": "Sweet Tamarind (Approx. 240 g - 260 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 129.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/apple-red-delicious-4-pcs-pack/590001721",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "title": "Apple Red Delicious 4 pcs (Approx 550 g - 700 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 169.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/pomegranate-kesar-4-pcs-approx-800-g-1000-g/590144486",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "title": "Pomegranate Kesar 4 pcs (Approx 800 g - 1000 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 269.00",
+      "button": "Add to Cart"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/groceries/apple-royal-gala-4-pcs/590001723",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "title": "Apple Royal Gala 4 pcs (Approx 500 g - 700 g)",
+      "drug-varients": "PRIVATE LABEL",
+      "price": "₹ 155.00",
+      "button": "Add to Cart"
+    }
+   ],
+   "premiumFruits" : [
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/medjoul-3-dates-2-go-premium-imported-50-g/592846374",
+      "image": "https://www.jiomart.com/images/product/150x150/599991469/3-dates-2-go-medjoul-king-solomon-premium-imported-3-pcs-product-images-o599991469-p592846374-0-202209160907.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 22,
+      "per_txt": "%",
+      "title": "3 Dates 2 Go Medjoul King Solomon Premium Imported 3 pcs",
+      "drug-varients": "KING SOLOMON",
+      "price": "₹ 140.00",
+      "price-box 3": "₹ 109.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/sweetlime-premium-indian-4-pc-approx-0-80-kg-1-10-kg/593160805",
+      "image": "https://www.jiomart.com/images/product/150x150/599990082/sweetlime-premium-indian-4-pc-approx-0-80-kg-1-10-kg-product-images-o599990082-p593160805-0-202209070708.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 9,
+      "per_txt": "%",
+      "title": "Sweet Lime Premium Indian 4 Pc (Approx 0.90 kg - 1.20 Kg)",
+      "drug-varients": "CURATE",
+      "price": "₹ 109.00",
+      "price-box 3": "₹ 99.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/orange-nagpur-premium-indian-4-pc-approx-720-g-960-g/593160807",
+      "image": "https://www.jiomart.com/images/product/150x150/599990134/orange-nagpur-premium-indian-4-pcs-approx-720-g-950-g-product-images-o599990134-p593160807-0-202209150009.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 31,
+      "per_txt": "%",
+      "title": "Orange Nagpur Premium Indian 4 Pc (Approx 650 g - 880 g)",
+      "drug-varients": "CURATE",
+      "price": "₹ 160.00",
+      "price-box 3": "₹ 109.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/apple-golden-delicious-premium-indian-4-pc-approx-760-g-960-g/593160812",
+      "image": "https://www.jiomart.com/images/product/150x150/599990365/apple-golden-delicious-premium-indian-4-pc-approx-760-g-960-g-product-images-o599990365-p593160812-0-202209070708.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 10,
+      "per_txt": "%",
+      "title": "Apple Golden Delicious Premium Indian 4 Pc (Approx 650 g - 880 g)",
+      "drug-varients": "CURATE",
+      "price": "₹ 400.00",
+      "price-box 3": "₹ 359.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/persimmon-premium-indian-1-pc-approx-175-g-225-g/593160822",
+      "image": "https://www.jiomart.com/images/product/150x150/599990419/persimmon-premium-indian-1-pc-approx-175-g-225-g-product-images-o599990419-p593160822-0-202209211959.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 11,
+      "per_txt": "%",
+      "title": "Persimmon Premium Indian 1 Pc (Approx 150 g - 200 g)",
+      "drug-varients": "CURATE",
+      "price": "₹ 100.00",
+      "price-box 3": "₹ 89.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/custard-apple-golden-premium-indian-1-pc-approx-400-g-500-g/593160824",
+      "image": "https://www.jiomart.com/images/product/150x150/599991062/custard-apple-golden-premium-indian-1-pc-approx-300-g-400-g-product-images-o599991062-p593160824-0-202209271839.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 9,
+      "per_txt": "%",
+      "title": "Custard Apple Golden Premium Indian 1 Pc (Approx 300 g - 400 g)",
+      "drug-varients": "CURATE",
+      "price": "₹ 120.00",
+      "price-box 3": "₹ 109.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/blueberry-premium-imported-pack-125-g/590860270",
+      "image": "https://www.jiomart.com/images/product/150x150/599990932/blueberry-premium-imported-pack-125-g-product-images-o599990932-p590860270-0-202207282047.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 30,
+      "per_txt": "%",
+      "title": "Blueberry Premium Imported Pack 125 g",
+      "drug-varients": "CURATE",
+      "price": "₹ 300.00",
+      "price-box 3": "₹ 210.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/avocado-hass-premium-imported-3-pc-approx-780-g-960-g/591778572",
+      "image": "https://www.jiomart.com/images/product/150x150/599991404/avocado-hass-premium-imported-3-pc-approx-780-g-960-g-product-images-o599991404-p591778572-0-202207282047.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 13,
+      "per_txt": "%",
+      "title": "Avocado Hass Tanzania Premium Imported 3 Pc (Approx 780 g - 960 g)",
+      "drug-varients": "CURATE",
+      "price": "₹ 390.00",
+      "price-box 3": "₹ 339.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/blueberry-premium-imported-pack-250-g/590860345",
+      "image": "https://www.jiomart.com/images/product/150x150/599990933/blueberry-premium-imported-pack-250-g-product-images-o599990933-p590860345-0-202207282047.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 30,
+      "per_txt": "%",
+      "title": "Blueberry Premium Imported Pack 250 g",
+      "drug-varients": "CURATE",
+      "price": "₹ 600.00",
+      "price-box 3": "₹ 419.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/avocado-hass-premium-imported-1-pc-approx-260-g-320-g/591429030",
+      "image": "https://www.jiomart.com/images/product/150x150/599991335/avocado-hass-premium-imported-1-pc-approx-260-g-320-g-product-images-o599991335-p591429030-0-202207282047.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 11,
+      "per_txt": "%",
+      "title": "Avocado Hass Tanzania Premium Imported 1 Pc (Approx 260 g - 320 g)",
+      "drug-varients": "CURATE",
+      "price": "₹ 130.00",
+      "price-box 3": "₹ 115.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/dates-oriental-premium-imported-pack-500-g/591021568",
+      "image": "https://www.jiomart.com/images/product/150x150/599991100/dates-oriental-king-solomon-premium-imported-pack-500-g-product-images-o599991100-p591021568-0-202207282047.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 30,
+      "per_txt": "%",
+      "title": "Dates Oriental King Solomon Premium Imported Pack 500 g",
+      "drug-varients": "KING SOLOMON",
+      "price": "₹ 475.00",
+      "price-box 3": "₹ 329.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/curate-s-signature-fruit-box-premium-imported-1-pack/591778568",
+      "image": "https://www.jiomart.com/images/product/150x150/599991444/curate-s-signature-fruit-box-premium-imported-1-pack-product-images-o599991444-p591778568-0-202209231748.jpg",
+      "dis_section": "OFF",
+      "dis_section 2": 16,
+      "per_txt": "%",
+      "title": "Curate's Signature Fruit Box Premium Imported 1 Pack",
+      "drug-varients": "CURATE",
+      "price": "₹ 1,199.00",
+      "price-box 3": "₹ 999.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/curate-s-bliss-fruit-box-premium-imported-1-pack/591778567",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "dis_section": "OFF",
+      "dis_section 2": 6,
+      "per_txt": "%",
+      "title": "Curate's Bliss Fruit Box Premium Imported 1 Pack",
+      "drug-varients": "CURATE",
+      "price": "₹ 850.00",
+      "price-box 3": "₹ 799.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/curate-s-delight-fruit-box-premium-imported-1-pack/591778566",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "dis_section": "OFF",
+      "dis_section 2": 14,
+      "per_txt": "%",
+      "title": "Curate's Delight Fruit Box Premium Imported 1 Pack",
+      "drug-varients": "CURATE",
+      "price": "₹ 700.00",
+      "price-box 3": "₹ 599.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/curate-s-classic-fruit-box-premium-imported-1-pack/591778564",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "dis_section": "OFF",
+      "dis_section 2": 14,
+      "per_txt": "%",
+      "title": "Curate's Classic Fruit Box Premium 1 Pack",
+      "drug-varients": "CURATE",
+      "price": "₹ 350.00",
+      "price-box 3": "₹ 299.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/avocado-hass-premium-imported-6-pc-approx-1-55-kg-1-95-kg/591778573",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "dis_section": "OFF",
+      "dis_section 2": 14,
+      "per_txt": "%",
+      "title": "Avocado Hass Tanzania Premium Imported 6 Pc (Approx 1.55 kg - 1.95 kg)",
+      "drug-varients": "CURATE",
+      "price": "₹ 780.00",
+      "price-box 3": "₹ 669.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/blueberry-premium-imported-pack-500-g/590860406",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "dis_section": "OFF",
+      "dis_section 2": 30,
+      "per_txt": "%",
+      "title": "Blueberry Premium Imported Pack 500 g",
+      "drug-varients": "CURATE",
+      "price": "₹ 1,200.00",
+      "price-box 3": "₹ 829.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/pear-forelle-premium-imported-4-pc-approx-720-g-880-g/591238252",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "dis_section": "",
+      "dis_section 2": "",
+      "per_txt": "",
+      "title": "Pear Forelle Premium Imported 4 Pc (Approx 650 g - 800 g)",
+      "drug-varients": "CURATE",
+      "price": "",
+      "price-box 3": "₹ 219.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/pear-packham-premium-imported-6-pc-approx-1-10-kg-1-30-kg/591226026",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "dis_section": "OFF",
+      "dis_section 2": 22,
+      "per_txt": "%",
+      "title": "Pear Packham Premium Imported 6 Pc (Approx 1.0 kg- 1.2 kg)",
+      "drug-varients": "CURATE",
+      "price": "₹ 270.00",
+      "price-box 3": "₹ 209.00"
+    },
+    {
+      "category_name": "https://www.jiomart.com/p/premiumfruits/dragonfruit-red-flesh-premium-indian-1-pc-approx-300-g-450-g/590860310",
+      "image": "https://www.jiomart.com/assets/global/jiomart-default-image-240x285.png",
+      "dis_section": "OFF",
+      "dis_section 2": 25,
+      "per_txt": "%",
+      "title": "Dragonfruit Red Flesh Premium Indian 1 pc (Approx 300 g - 400 g)",
+      "drug-varients": "CURATE",
+      "price": "₹ 200.00",
+      "price-box 3": "₹ 149.00"
+    }
+   ]
+  }]
+ 
+  
+
+
+  
+  
