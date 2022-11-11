@@ -1,7 +1,35 @@
 import { Box, Link, Text } from "@chakra-ui/react";
 import React from "react";
+import { useEffect } from "react";
+import axios from "axios"
 
 const ApplyCoupon = () => {
+
+  // const get = async () =>{
+  //     let res = await fetch("http://localhost:8080/products");
+  //     let data = await res.json();
+  //     console.log(data)
+  // }
+  // useEffect(() =>{
+  // get();
+  // },[])
+
+const getL = async () =>{
+  let res = await axios.post("http://localhost:8080/authUser/login", {
+    
+  email: "v@g",
+  password: "123",
+  
+  });
+  let data = res.data;
+  console.log(data);
+}
+
+useEffect(() =>{
+  getL();
+},[])
+
+
   return (
     <Box w="96%" border="1px solid blue" 
     borderRadius="2" m="auto" pl={{md:4}} textAlign={"start"}>

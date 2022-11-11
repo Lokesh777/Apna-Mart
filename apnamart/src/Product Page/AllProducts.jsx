@@ -8,18 +8,50 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import fruit from "./fruits.json";
+import product from "./product.json";
+import axios from "axios"
 
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const AllProducts = () => {
+
+  const [fruit, setFruit] = useState([]);
+  const [freshFruit, setFreshFruit] = useState([]);
+  const [premium, setPremium] = useState([]);
 
   const [state , setState] = useState(true);
   const toggleButton = () =>{
     setState(!state)
   }
-  console.log(fruit);
+  console.log(product);
+
+  const getData = async () =>{
+     try{
+        let res = await axios("http://localhost:8080/products");
+        let data = res.data;
+        let freshFruis = data[0].freshFruis;
+        
+        let fruits = data[0].fruit;
+
+        let premium = data[0].premiumFruits;
+        setFruit(fruits);
+        setFreshFruit(freshFruis);
+        setPremium(premium)
+        console.log(data[0].freshFruis);
+     } 
+     catch (e) {
+         console.log(e);
+     } 
+     finally {
+
+     }
+  }
+
+  useEffect(() =>{
+   getData();
+  },[])
   return (
     <Box
       w={{lg:"77%", md : "100%", base:"100%"}}
@@ -48,8 +80,8 @@ const AllProducts = () => {
               <Box w="160px" h="160px" m="auto" border="1px solid grey" mt="5">
                 <Image
                   _hover={{ w: "160px", h: "160px", transition: "0.4s", cursor:"pointer"}}
-                  src={ele["product-image-photo"]}
-                  alt={ele.clsgetname}
+                  src={ele.image}
+                  alt={ele.title}
                   w="150px"
                   h="150px"
                   border="1px solid red"
@@ -62,7 +94,7 @@ const AllProducts = () => {
                   textAlign="start"
                   fontSize={{lg:"1vw",md:"12px", sm:"10px", base:"10px"}}
                 >
-                  {ele.clsgetname}
+                  {ele.title}
                 </Text>
               </Box>
 
@@ -70,7 +102,7 @@ const AllProducts = () => {
                 <Text fontSize={{lg:"1vw",md:"12px", sm:"10px", base:"10px"}}>M.R.P: </Text>
                 <Text fontSize={{lg:"16px",md:"14px", sm:"12px", base:"10px"}} fontFamily="Arial Black">
                   {" "}
-                  {ele["price-box"]}
+                  {ele.price}
                 </Text>
               </HStack>
               {state ? 

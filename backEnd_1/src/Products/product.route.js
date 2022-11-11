@@ -4,8 +4,17 @@ const Product = require("./product.model");
 const app = express.Router();
 
 app.get("/", async (req, res) => {
-    let products = await Product.find();
-    res.send(products)
+    
+    // const {name} = req.params;
+    try{
+        let products = await Product.find();
+       
+        res.send(products)
+    }
+    catch(e){
+        console.log(e)
+    }
+    
 })
 
 app.get("/:id", async (req,res) =>{
