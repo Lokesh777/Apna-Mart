@@ -17,13 +17,30 @@ import { useEffect } from "react";
 
 const AllProducts = () => {
 
+
+  // ------------ Posting the Cart Data --------------
+   const postCart = async(ele) =>{
+    try{
+      await axios.post("", {
+        ...ele,
+        count : 1
+      });
+    } catch (e) {
+      console.log(e)
+    }
+      
+  }
+  // --------- Posted the Cart Data Successfully ----------
+
+
   const [fruit, setFruit] = useState([]);
   const [freshFruit, setFreshFruit] = useState([]);
   const [premium, setPremium] = useState([]);
 
   const [state , setState] = useState(true);
-  const toggleButton = () =>{
-    setState(!state)
+  const toggleButton = (ele) =>{
+    // setState(!state)
+    postCart(ele)
   }
   console.log(product);
 
@@ -120,7 +137,7 @@ const AllProducts = () => {
                 mb="7"
                 mt="4"
               _hover={{cursor:"pointer"}}
-              onClick = {toggleButton}
+              onClick = {toggleButton(ele)}
               >
                 <Text ml="3" mt="2" >
                   Add to Cart{" "}
