@@ -17,7 +17,7 @@ import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const AllProducts = () => {
+const AllProducts = ({headerImage}) => {
 
 
   // ------------ Posting the Cart Data --------------
@@ -79,6 +79,10 @@ const AllProducts = () => {
       mb="24px"
       p="16px 0px 16px 0px"
     >
+       <Box>
+        <Image  src={headerImage} alt="header"/>
+       </Box>
+       
       <Box w="97%" border="1px solid blue" m="auto">
         <Text mb="16px">All Products</Text>
         <Grid

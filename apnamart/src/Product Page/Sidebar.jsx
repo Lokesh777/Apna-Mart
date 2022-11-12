@@ -9,7 +9,7 @@ const Sidebar = () => {
       menudata={menudata}
       cartdata={cartdata}
       headerImage={
-        "https://www.jiomart.com/images/category/1687/home-kitchen-20220519.jpeg"
+        "https://www.jiomart.com/images/category/219/fruits-vegetables-20220519.jpeg"
       }
     />
   );
