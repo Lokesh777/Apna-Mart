@@ -1,21 +1,18 @@
-import { Box, Text } from '@chakra-ui/react'
-import React from 'react'
-import styles from './Product.module.css';
+import React from "react";
+import "./Product.module.css";
+import { SubPage } from "../Components/SubPage";
+import menudata from "./PageData/HomeKitchenFilterMenuData.json";
+import cartdata from "./PageData/KitchenWare.json";
 const Sidebar = () => {
   return (
-    <Box className={styles.sideBar}>
-      <Box >
-        <Text borderBottom={"1px solid grey"}>C</Text>
-        <Box >
+    <SubPage
+      menudata={menudata}
+      cartdata={cartdata}
+      headerImage={
+        "https://www.jiomart.com/images/category/1687/home-kitchen-20220519.jpeg"
+      }
+    />
+  );
+};
 
-          <Text> Apples</Text>
-        </Box>
-      </Box>
-      <Box>
-
-      </Box>
-    </Box>
-  )
-}
-
-export default Sidebar
+export default Sidebar;
