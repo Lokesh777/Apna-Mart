@@ -1,0 +1,322 @@
+[
+  {
+    "cat-submenu": "Mobiles & Tablets",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Smartphones",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/mobiles-tablets/smartphones/777"
+      },
+      {
+        "sub-menu 1": "Wearable Technology",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/mobiles-tablets/wearable-technology/772"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "TV & Speaker",
+    "sub-menu": [{ "sub-menu 1": "Televisions" }]
+  },
+  {
+    "cat-submenu": "Women",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Ethnic Wear",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/fashion/women/ethnic-wear/494"
+      },
+      {
+        "sub-menu 1": "Western Wear",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/fashion/women/western-wear/510"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Home Appliances",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Vacuum Cleaners",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/home-appliances/vacuum-cleaners/796"
+      },
+      {
+        "sub-menu 1": "Irons",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/home-appliances/irons/726"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Dairy & Bakery",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Ghee",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/dairy-bakery/ghee/1571"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Computers",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Printers",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/computers/printers/741"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Girls",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Western Wear",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/fashion/girls/western-wear/564"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Staples",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Atta, Flours & Sooji",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/staples/atta-flours-sooji/26"
+      },
+      {
+        "sub-menu 1": "Dals & Pulses",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/staples/dals-pulses/17"
+      },
+      {
+        "sub-menu 1": "Rice & Rice Products",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/staples/rice-rice-products/14"
+      },
+      {
+        "sub-menu 1": "Masalas & Spices",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/staples/masalas-spices/21"
+      },
+      {
+        "sub-menu 1": "Salt, Sugar & Jaggery",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/staples/salt-sugar-jaggery/23"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Snacks & Branded Foods",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Breakfast Cereals",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/snacks-branded-foods/breakfast-cereals/98"
+      },
+      {
+        "sub-menu 1": "Snacks & Namkeen",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/snacks-branded-foods/snacks-namkeen/43"
+      },
+      {
+        "sub-menu 1": "Chocolates & Candies",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/snacks-branded-foods/chocolates-candies/70"
+      },
+      {
+        "sub-menu 1": "Ready To Cook & Eat",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/snacks-branded-foods/ready-to-cook-eat/53"
+      },
+      {
+        "sub-menu 1": "Spreads, Sauces, Ketchup",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/snacks-branded-foods/spreads-sauces-ketchup/55"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Kitchen Appliances",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Juicer Mixer Grinders",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/kitchen-appliances/juicer-mixer-grinders/728"
+      },
+      {
+        "sub-menu 1": "Blenders",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/kitchen-appliances/blenders/731"
+      },
+      {
+        "sub-menu 1": "Electric Kettles",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/kitchen-appliances/electric-kettles/749"
+      },
+      {
+        "sub-menu 1": "Choppers & Slicers",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/kitchen-appliances/choppers-slicers/4922"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Beverages",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Tea",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/beverages/tea/34"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Personal Care",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Oral Care",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/personal-care/oral-care/132"
+      },
+      {
+        "sub-menu 1": "Feminine Hygiene",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/personal-care/feminine-hygiene/134"
+      },
+      {
+        "sub-menu 1": "Health & Wellness",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/personal-care/health-wellness/165"
+      },
+      {
+        "sub-menu 1": "Makeup",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/personal-care/makeup/188"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Personal Care & Grooming",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Shavers & Trimmers",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/personal-care-grooming/shavers-trimmers/798"
+      },
+      {
+        "sub-menu 1": "Hair Dryers & Stylers",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/personal-care-grooming/hair-dryers-stylers/804"
+      },
+      {
+        "sub-menu 1": "Sports & Fitness Watches",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/personal-care-grooming/sports-fitness-watches/793"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Personal Care",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Oral Care",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/beauty/personal-care/oral-care/3473"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Home Care",
+    "sub-menu": [
+      {
+        "sub-menu 1": "All Purpose Cleaners",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/home-care/all-purpose-cleaners/152"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Mom & Baby",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Feminine Hygiene",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/beauty/mom-baby/feminine-hygiene/3260"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Accessories",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Pen Drives",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/accessories/pen-drives/718"
+      },
+      {
+        "sub-menu 1": "Headphones & Headsets",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/electronics/accessories/headphones-headsets/756"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Home & Kitchen",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Kitchenware",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/home-kitchen/kitchenware/1710"
+      },
+      {
+        "sub-menu 1": "Dining",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/home-kitchen/dining/1712"
+      },
+      {
+        "sub-menu 1": "Furnishing",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/home-kitchen/furnishing/1696"
+      },
+      {
+        "sub-menu 1": "Home Decor",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/home-kitchen/home-decor/2335"
+      },
+      {
+        "sub-menu 1": "Furniture",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/home-kitchen/furniture/1706"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Mom & Baby Care",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Feeding",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/mom-baby-care/feeding/2552"
+      },
+      {
+        "sub-menu 1": "Baby Grooming",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/mom-baby-care/baby-grooming/2554"
+      },
+      {
+        "sub-menu 1": "Baby Bedding Sets & Pillows",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/mom-baby-care/baby-bedding-sets-pillows/2556"
+      },
+      {
+        "sub-menu 1": "Baby Bath & Hygiene",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/mom-baby-care/baby-bath-hygiene/2562"
+      },
+      {
+        "sub-menu 1": "Diapers & Wipes",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/mom-baby-care/diapers-wipes/2564"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Books",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Children's Books",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/books/children-s-books/2832"
+      },
+      {
+        "sub-menu 1": "School Textbooks",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/books/school-textbooks/2889"
+      },
+      {
+        "sub-menu 1": "Textbooks",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/books/textbooks/2903"
+      }
+    ]
+  },
+  {
+    "cat-submenu": "Pets",
+    "sub-menu": [
+      {
+        "sub-menu 1": "Dogs",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/pets/dogs/3347"
+      },
+      {
+        "sub-menu 1": "Cats",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/pets/cats/3351"
+      },
+      {
+        "sub-menu 1": "Fish & Aquatics",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/pets/fish-aquatics/3352"
+      },
+      {
+        "sub-menu 1": "Birds",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/pets/birds/3353"
+      },
+      {
+        "sub-menu 1": "Other Pets",
+        "sub-menu 1 href": "http://127.0.0.1:5500/c/groceries/pets/other-pets/3354"
+      }
+    ]
+  }
+]
