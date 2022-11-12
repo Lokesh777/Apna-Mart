@@ -1,3 +1,5 @@
+// const axios = require("axios").default 
+import axios from "axios"
 import {
   Box,
   Button,
@@ -9,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import product from "./product.json";
-import axios from "axios"
+
 
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
