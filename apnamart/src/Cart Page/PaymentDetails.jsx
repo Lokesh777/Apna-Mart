@@ -1,7 +1,24 @@
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useContext } from "react";
+import { TotalContext } from "../Context/TotalContext";
 const PaymentDetails = () => {
+  // const cartData = async () =>{
+  //   try{
+  //     const res = await axios("http://localhost:8080/cart/9");
+  //     const data = res.data;
+  //     console.log(data[0].data);
+  //     setCart(data[0].data)
+  //   } 
+  //   catch(e){
+  //     console.log(e);
+  //   }
+        
+  // }
+  const {total , setTotal} = useContext(TotalContext);
+  useEffect(() =>{
+
+  },[total]);
   return (
     <Box w="96%" m="auto" pos={"sticky"} top="1" zIndex="5" >
  <Box 
@@ -24,12 +41,12 @@ const PaymentDetails = () => {
            fontSize="14px" pb="2" mb="1">
             <Text 
             color="grey"> MRP Total</Text>
-            <Text >₹0</Text>
+            <Text >₹{total}</Text>
           </Flex>
           <Flex justifyContent={"space-between"}  
           fontSize="14px" fontWeight={"500"} pb="6">
             <Text>Total Amount</Text>
-            <Text>₹0</Text>
+            <Text>₹{total}</Text>
           </Flex>
         </Box>
       </Box>
