@@ -2,16 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import Product from './Product Page/Product.jsx';
 import CartPage from './Cart Page/CartPage';
-import Navbar from "./navbars/Navbar"
-import Footer from "./footer/Footer"
+
 import { Route, Routes } from 'react-router-dom';
+import MainHome from './HomePage/MainHome';
 function App() {
   return (
     <div className="App">
       <Routes>
-        {/* <Route path="/" element={<MainHome />} /> */}
-        {/* <Route path="/" element ={<Navbar/>} /> */}
-        <Route path="/" element ={<Footer/>} />
+        <Route path="/" element={<MainHome />} />
+        
         <Route path="/product" element={<Product/>} />
         <Route path="/cart" element={<CartPage/>} />
 {   /*     <Route path="/about" element="about" />
