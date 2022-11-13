@@ -50,6 +50,7 @@
    } 
    .flexbar{
     display: flex;
+    
     color: white;
   }
   .flexbar Text{
@@ -59,10 +60,15 @@
     /* border: 1px solid black; */
     background: rgb(250, 247, 247);
     height: 50px;
-    width: 100%;
+    width: 90rem;
     display: flex;
-    gap: 30px;
+    position: relative;
+    z-index: 1;
+
+    
+    justify-content: space-evenly;
     padding-top: 9px;
+    
   }
 
  .dropmenu{

@@ -18,6 +18,7 @@ import MultipleSlide from "./Slide/MultipleSlide";
 import Sliding from "./Slide/Sliding";
 import ShopCategory from "./Slide/ShopCategory";
 import Category from "./Slide/Category";
+import Footer from "../footer/Footer"
 
 import { Link } from "react-router-dom";
 
@@ -63,10 +64,7 @@ const Section = () => {
         <h3 class={styles.text}>Trending SmartPhones</h3>
         <TrendingSmartPhones />
       </div>
-      <div className={styles.topDeals}>
-        <h3 class={styles.text}>Top Mobile Brands</h3>
-        <TopMobileBrands />
-      </div>
+
       {/* slider needed top mobile brands */}
       <div className={styles.topDeals}>
         <h3 class={styles.text}>Best selling Electronics</h3>
@@ -192,7 +190,7 @@ const Section = () => {
         </div>
       </Link>
       <div className={styles.topDeals}>
-        <h3 class={styles.text}>Kitchen Essentials</h3>
+        <h3 class={styles.text}>Daily Essentials</h3>
         <Kitchen />
       </div>
       <div className={styles.hotest}>
@@ -274,6 +272,25 @@ const Section = () => {
             </div>
           ))}
         </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div>
+        <ShopCategory />
+      </div>
+      <br />
+      <br />
+      <br />
+      <div>
+        <Footer />
       </div>
     </div>
   );
