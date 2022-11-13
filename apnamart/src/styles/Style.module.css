@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
   }
+  
   .navbar {
+  border: 1px solid yellow;
   background-color: rgb(0, 38, 49);
   border: 1px solid black;
   width: 100%;
@@ -13,20 +15,22 @@
   }
  
   .logoimage{
-    width: 55%;
+    width: 78px;
     height: 78px;
-    margin-left: 20px;
+    margin-left: 2%;
+    border: 1px solid red ;
   }
   .middlebar {
-     /* border: 1px solid greenyellow;  */
-     width: 150%;
-    height: 50px;
-    margin-left: -45%;
+     border: 1px solid greenyellow; 
+     width: 52vw;
+    /* height: 50px; */
+    /* margin-left: -45%; */
     
   }
   .inputbox{
+    border: 1px solid rgb(32, 120, 219);
     width: 100%;
-    margin-right: 112px;
+    margin-right: 10vw;
     padding: 5px;
     border-radius: 5px;
     margin-top: 20px; 
@@ -34,19 +38,20 @@
     border: none;
   }
   .leftbar { 
-    
+    border: 1px solid rgb(115, 14, 209);
     display: flex;
     align-items: center;
     width: 50%;
     height: 80px;
   } 
   .rightbar{
-    /* border: 1px solid rgb(196, 13, 150);  */
+    border: 1px solid rgb(196, 13, 150); 
      align-items: center;
     display: flex;
-    column-gap: 60px;
+    column-gap: 5vw;
+
     width:88%;
-    margin-left: 50px; 
+    margin-left: 1vw; 
    } 
    .flexbar{
     display: flex;
@@ -56,18 +61,121 @@
     margin-top:  90px; 
    }
   .secondiv{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     background: rgb(250, 247, 247);
     height: 50px;
     width: 100%;
     display: flex;
-    gap: 30px;
+    /* gap: 1%; */
     padding-top: 9px;
   }
+  .sum{
+    font-size: 16px;
+  }
+  /* @media screen and (max-width: 600px) {
+   .sum {font-size: 12px};
+  }
+  
+  @media screen and (min-width: 300px) {
+    .sum {font-size: 8px};
+    
+  } */
 
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    .sum {font-size: 12px};
+    .secondiv{
+      border: 1px solid black;
+      background: rgb(250, 247, 247);
+      height: 50px;
+      width: 100%;
+      display: flex;
+      gap: 8px;
+      padding-top: 9px;
+
+      
+    }
+    .middlebar {
+      border: 1px solid greenyellow; 
+      width: 150%;
+     /* height: 50px; */
+     margin-left: -45%;
+     display: none;
+     
+   }
+   .rightbar{
+    border: 1px solid rgb(196, 13, 150); 
+     align-items: center;
+    display: flex;
+    column-gap: 160px;
+
+    
+    margin-right: 10px; 
+   } 
+   .logoimage{
+    width: 78px;
+    height: 78px;
+    margin-left: 4%;
+    border: 1px solid red ;
+  }
+   
+  }
+  @media screen and (max-width: 600px)  {
+  
+    .sum {font-size: 10px};
+    .secondiv{
+      border: 1px solid black;
+      background: rgb(250, 247, 247);
+      height: 50px;
+      width: 100%;
+      display: flex;
+      gap: 5px;
+      padding-top: 9px;
+    }
+    .navbar {
+      border: 1px solid yellow;
+      background-color: rgb(0, 38, 49);
+      border: 1px solid black;
+      width: 100%;
+      height: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      }
+    .middlebar {
+      
+     display: none;
+     
+   }
+   .rightbar{
+    border: 1px solid rgb(196, 13, 150); 
+     align-items: center;
+    display: flex;
+    column-gap: 40px;
+
+    
+    margin-left: 5px; 
+   } 
+   .logoimage{
+    width: 78px;
+    height: 78px;
+    margin-left: 5%;
+    border: 1px solid red ;
+  }
+  .navbar {
+    border: 1px solid yellow;
+    background-color: rgb(0, 38, 49);
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
  .dropmenu{
     display: flex;
     
  }
  
- 
+ .dat{
+  border: 1px solid red;
+ }

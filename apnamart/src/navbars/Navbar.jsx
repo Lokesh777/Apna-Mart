@@ -7,6 +7,8 @@ import { HiUser } from "react-icons/hi";
 import { FaUserCircle } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 import { HiLocationMarker } from "react-icons/hi";
+import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+
 import {
   Drawer,
   DrawerBody,
@@ -32,6 +34,9 @@ import {
   Box,
   Flex,
   Link,
+  Hide,
+  Center,
+  Divider,
 } from "@chakra-ui/react";
 
 const Navbar = () => {
@@ -39,6 +44,9 @@ const Navbar = () => {
   const { isOpenOne, onOpenTwo, onCloseThree } = useDisclosure();
   const [placement, setPlacement] = React.useState("left");
 
+  const style = {
+    fontSize: { lg: "14px", sm: "10px", md: "12px" },
+  };
   return (
     <div>
       <nav className={styles.navbar}>
@@ -67,7 +75,7 @@ const Navbar = () => {
                   >
                     Hello, Sign in
                   </Text>
-                  <FiX color={"white"} />
+                  <FiX onClick={onClose} color={"white"} />
                 </Flex>
 
                 <Flex marginTop={"5%"}>
@@ -177,10 +185,15 @@ const Navbar = () => {
                   <b>DOWNLOAD APP</b>
                 </Text>
 
-                <Flex width={"45%"} >
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHUwqPViAb_9pi_Qfp_JfWqbIYfb2RqD68A&usqp=CAU" alt="" />
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvIxqWzg96N3lKYiagEsP6XZBgjUZhCe_Y5g&usqp=CAU" alt="" />
-                
+                <Flex width={"45%"}>
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHUwqPViAb_9pi_Qfp_JfWqbIYfb2RqD68A&usqp=CAU"
+                    alt=""
+                  />
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvIxqWzg96N3lKYiagEsP6XZBgjUZhCe_Y5g&usqp=CAU"
+                    alt=""
+                  />
                 </Flex>
               </DrawerBody>
             </DrawerContent>
@@ -188,11 +201,13 @@ const Navbar = () => {
           <img className={styles.logoimage} src={APNAMAT} alt="Logo" />
         </div>
         <div className={styles.middlebar}>
-          <input
-            className={styles.inputbox}
-            type="text"
-            placeholder="Search essentials, groceries,and more ..."
-          />
+          <Hide below={"md"}>
+            <input
+              className={styles.inputbox}
+              type="text"
+              placeholder="Search essentials, groceries,and more ..."
+            />
+          </Hide>
         </div>
 
         <div className={styles.rightbar}>
@@ -210,66 +225,204 @@ const Navbar = () => {
           </flex>
         </div>
       </nav>
+
       <div className={styles.secondiv}>
-        <Flex fontSize={"14"} width={"8%"} marginLeft={"9"}>
-          <HiLocationMarker fontSize={"30"} color={"grey"} />
-          <Text marginLeft={"2"}>
-            Deliver to <b>400020</b>
+        <Flex fontSize={"14"} gap={{ lg: "5px" }} width={"8%"}  marginLeft={{ lg: "10px", md: "5px", sm: "2px" }}>
+          <HiLocationMarker fontSize={"30px"} color={"grey"} />
+          <Text
+            marginLeft={{ lg: "10px", md: "5px", sm: "2px" }}
+            fontSize={{ lg: "14px", md: "12px", sm: "10px" }}
+          >
+            Deliver to 400020
           </Text>
         </Flex>
 
-        <details>
-          <summary>Groceries</summary>
-          <p>Fruits & Vegetables</p>
-          <p>Dairy & Bekery</p>
-          <p>Staples</p>
-          <p>Snacks & Branded Food</p>
-        </details>
+        <Menu isOpen={onOpenTwo} >
+            <MenuButton
+            border={"1px solid red"}
+            
+            fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
+                variant="ghost"
+                mx={{lg:4,md:3,sm:3,base:0}}
+                // py={[1, 2, 2]}
+                // px={4}
+                borderRadius={5}
+                _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+                aria-label="Courses"
+                fontWeight="normal"
+                onMouseEnter={onOpenTwo}
+                onMouseLeave={onCloseThree}
+            >
+                Groceries{onOpenTwo ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            </MenuButton>
+            <MenuList onMouseEnter={onOpenTwo} onMouseLeave={onCloseThree}>
+                <MenuItem>Fruits & Vegetables</MenuItem>
+                <MenuItem>Dairy & Bekery</MenuItem>
+                <MenuItem>Staples</MenuItem>
+                <MenuItem>Snacks & Branded Food</MenuItem>
+            </MenuList>
+        </Menu>
 
-        <details>
-          <summary>Premium Fruits</summary>
-          <p>Fruits & Vegetables</p>
-          <p>Dairy & Bekery</p>
-          <p>Staples</p>
-          <p>Snacks & Branded Food</p>
-        </details>
 
-        <details>
-          <summary>Home & Kitchen</summary>
-          <p>Fruits & Vegetables</p>
-          <p>Dairy & Bekery</p>
-          <p>Staples</p>
-          <p>Snacks & Branded Food</p>
-        </details>
-        <details>
-          <summary>Fashion</summary>
-          <p>Fruits & Vegetables</p>
-          <p>Dairy & Bekery</p>
-          <p>Staples</p>
-          <p>Snacks & Branded Food</p>
-        </details>
-        <details>
-          <summary>Beauty</summary>
-          <p>Fruits & Vegetables</p>
-          <p>Dairy & Bekery</p>
-          <p>Staples</p>
-          <p>Snacks & Branded Food</p>
-        </details>
-        <details>
-          <summary>Home Improvement</summary>
-          <p>Fruits & Vegetables</p>
-          <p>Dairy & Bekery</p>
-          <p>Staples</p>
-          <p>Snacks & Branded Food</p>
-        </details>
-        <details>
-          <summary>Sports, Toys & Luggage</summary>
-          <p>Fruits & Vegetables</p>
-          <p>Dairy & Bekery</p>
-          <p>Staples</p>
-          <p>Snacks & Branded Food</p>
-        </details>
+        <Menu isOpen={onOpenTwo}>
+            <MenuButton
+            border={"1px solid red"}
+            fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
+            variant="ghost"
+            mx={{lg:4,md:3,sm:3,base:0}}
+                // py={[1, 2, 2]}
+                // px={4}
+                borderRadius={5}
+                _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+                aria-label="Courses"
+                fontWeight="normal"
+                onMouseEnter={onOpenTwo}
+                onMouseLeave={onCloseThree}
+            >
+                Premium Fruits{onOpenTwo ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            </MenuButton>
+            <MenuList onMouseEnter={onOpenTwo} onMouseLeave={onCloseThree}>
+                <MenuItem>Apple & Pears</MenuItem>
+                <MenuItem>Avocado,Peach,Plum</MenuItem>
+                <MenuItem>Banana,Melons & Coconut</MenuItem>
+                <MenuItem>Cherries,Berries & Exotc Fruits</MenuItem>
+            </MenuList>
+        </Menu>
+
+        <Menu isOpen={onOpenTwo}>
+            <MenuButton
+            border={"1px solid red"}
+            fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
+            variant="ghost"
+            mx={{lg:4,md:3,sm:3,base:0}}
+                // py={[1, 2, 2]}
+                // px={4}
+                borderRadius={5}
+                _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+                aria-label="Courses"
+                fontWeight="normal"
+                onMouseEnter={onOpenTwo}
+                onMouseLeave={onCloseThree}
+            >
+                Home & Kitchen{onOpenTwo ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            </MenuButton>
+            <MenuList onMouseEnter={onOpenTwo} onMouseLeave={onCloseThree}>
+                <MenuItem>Bathroom & Laundry Accessories</MenuItem>
+                <MenuItem>Furnishing</MenuItem>
+                <MenuItem>Staples</MenuItem>
+                <MenuItem>Furniture</MenuItem>
+            </MenuList>
+        </Menu>
+
+        <Menu isOpen={onOpenTwo}>
+            <MenuButton
+            border={"1px solid red"}
+            fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
+                variant="ghost"
+                mx={{lg:4,md:3,sm:3,base:0}}
+                // py={[1, 2, 2]}
+                // px={4}
+                borderRadius={5}
+                _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+                aria-label="Courses"
+                fontWeight="normal"
+                onMouseEnter={onOpenTwo}
+                onMouseLeave={onCloseThree}
+            >
+                Fashion{onOpenTwo ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            </MenuButton>
+            <MenuList onMouseEnter={onOpenTwo} onMouseLeave={onCloseThree}>
+                <MenuItem>Fruits & Vegetables</MenuItem>
+                <MenuItem>Dairy & Bekery</MenuItem>
+                <MenuItem>Staples</MenuItem>
+                <MenuItem>Snacks & Branded Food</MenuItem>
+            </MenuList>
+        </Menu>
+       
+        <Menu isOpen={onOpenTwo}>
+            <MenuButton
+            border={"1px solid red"}
+            fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
+            variant="ghost"
+            mx={{lg:4,md:3,sm:3,base:0}}
+                // py={[1, 2, 2]}
+                // px={4}
+                borderRadius={5}
+                _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+                aria-label="Courses"
+                fontWeight="normal"
+                onMouseEnter={onOpenTwo}
+                onMouseLeave={onCloseThree}
+            >
+                Beauty{onOpenTwo ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            </MenuButton>
+            <MenuList onMouseEnter={onOpenTwo} onMouseLeave={onCloseThree}>
+                <MenuItem>Make-Up</MenuItem>
+                <MenuItem>Hair</MenuItem>
+                <MenuItem>Fragrance</MenuItem>
+                <MenuItem>Personal Care</MenuItem>
+                <MenuItem>Mom & Baby</MenuItem>
+                <MenuItem>Men's Grooming</MenuItem>
+                <MenuItem>Tools & Appliances</MenuItem>
+                <MenuItem>Covid Essesntials</MenuItem>
+                <MenuItem>Wellness</MenuItem>
+                <MenuItem>Fitness</MenuItem>
+            </MenuList>
+        </Menu>
         
+
+        <Menu isOpen={onOpenTwo}>
+            <MenuButton
+            border={"1px solid red"}
+            fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
+                variant="ghost"
+                mx={{lg:4,md:3,sm:3,base:0}}
+                // py={[1, 2, 2]}
+                // px={4}
+                borderRadius={5}
+                _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+                aria-label="Courses"
+                fontWeight="normal"
+                onMouseEnter={onOpenTwo}
+                onMouseLeave={onCloseThree}
+            >
+                Home Improvement{onOpenTwo ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            </MenuButton>
+            <MenuList onMouseEnter={onOpenTwo} onMouseLeave={onCloseThree}>
+                <MenuItem>Auto Care</MenuItem>
+                <MenuItem>Building Supplies & Measuring Tools</MenuItem>
+                <MenuItem>Carpentry</MenuItem>
+                <MenuItem>Electrical</MenuItem>
+                <MenuItem>Hardware & plumbing</MenuItem>
+                <MenuItem>Home Cleaning & Orgianisation</MenuItem>
+                <MenuItem>Industrial & Scientifc Supplies</MenuItem>
+                <MenuItem>Packaging Supplies</MenuItem>
+            </MenuList>
+        </Menu>
+
+        <Menu isOpen={onOpenTwo}>
+            <MenuButton
+            border={"1px solid red"}
+            fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
+            variant="ghost"
+            mx={{lg:4,md:3,sm:3,base:0}}
+                // py={[1, 2, 2]}
+                // px={4}
+                borderRadius={5}
+                _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+                aria-label="Courses"
+                fontWeight="normal"
+                onMouseEnter={onOpenTwo}
+                onMouseLeave={onCloseThree}
+            >
+                Sports, Toys & Luggage{onOpenTwo ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            </MenuButton>
+            <MenuList onMouseEnter={onOpenTwo} onMouseLeave={onCloseThree}>
+                <MenuItem>Toys & Games</MenuItem>
+                <MenuItem>Bags & Travel Lugguge</MenuItem>
+                <MenuItem>Soprting Goods & Fitness Equipment</MenuItem>
+            </MenuList>
+        </Menu>
       </div>
     </div>
   );
