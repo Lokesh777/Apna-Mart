@@ -77,6 +77,15 @@
     background: rgb(32, 32, 32);
   }
 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-1000rem * 9));
+    }
+  }
+
 /* 
   -----------------Below Slider---------- */
 

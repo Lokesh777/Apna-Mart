@@ -332,6 +332,358 @@ export const GrocerieSlider = [
   },
 ];
 
+//
+export const SmartPhonesSlider = [
+  {
+    dis_section: "off",
+    "dis_section 2": 30,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/realme-narzo-50a-128-gb-4-gb-ram-oxygen-blue-mobile-phone/594779615",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493178791/realme-narzo-50a-128-gb-4-gb-ram-oxygen-blue-mobile-phone-digital-o493178791-p594779615-0-202210221327.jpeg",
+    heading: "Realme Narzo 50A 128 GB, 4 GB RAM,..",
+    price: "₹ 10,499.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 14,999.00",
+    save: "Save ₹ 4,500.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 16,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/apple-iphone-12-128-gb-black/590441373",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/491901533/apple-iphone-12-128-gb-black-digital-o491901533-p590441373-0-202207250045.jpeg",
+    heading: "Apple iPhone 12 128 GB, Black",
+    price: "₹ 53,900.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 64,900.00",
+    save: "Save ₹ 11,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 29,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/redmi-10-128-gb-6-gb-ram-midnight-black-mobile-phone/591469929",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492849854/redmi-10-128-gb-6-gb-ram-midnight-black-mobile-phone-digital-o492849854-p591469929-0-202205192214.jpeg",
+    heading: "Redmi 10 128 GB, 6 GB RAM, Midnight..",
+    price: "₹ 11,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 16,999.00",
+    save: "Save ₹ 5,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 30,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/moto-g31-64-gb-4-gb-ram-baby-blue-smartphone/591163176",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492849083/motorola-g31-64-gb-4-gb-ram-baby-blue-mobile-phone-digital-o492849083-p591163176-0-202204132005.jpeg",
+    heading: "Motorola G31 64 GB, 4 GB RAM, Baby..",
+    price: "₹ 10,499.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 14,999.00",
+    save: "Save ₹ 4,500.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 27,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/motorola-g62-5g-128-gb-6-gb-ram-midnight-grey-mobile-phone/593409619",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493177198/motorola-g62-5g-128-gb-6-gb-ram-midnight-grey-mobile-phone-digital-o493177198-p593409619-0-202208102107.jpeg",
+    heading: "Motorola G62 5G 128 GB, 6 GB RAM, M..",
+    price: "₹ 15,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 21,999.00",
+    save: "Save ₹ 6,000.00",
+  },
+
+  {
+    dis_section: "off",
+    "dis_section 2": 31,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/motorola-g51-5g-64-gb-4-gb-ram-indigo-blue-smartphone/591193919",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492849093/motorola-g51-5g-64-gb-4-gb-ram-indigo-blue-smartphone-digital-o492849093-p591193919-0-202203101232.jpeg",
+    heading: "Motorola G51 5G 64 GB, 4 GB RAM, In..",
+    price: "₹ 12,249.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 17,999.00",
+    save: "Save ₹ 5,750.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 23,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/xiaomi-redmi-9-activ-128-gb-6-gb-ram-metallic-purple-smartphone/590837915",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/491998280/xiaomi-redmi-9-activ-128-gb-6-gb-ram-metallic-purple-smartphone-digital-o491998280-p590837915-0-202110292148.jpeg",
+    heading: "Xiaomi Redmi 9 Activ 128 GB, 6 GB R..",
+    price: "₹ 9,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 12,999.00",
+    save: "Save ₹ 3,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 30,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/tecno-spark-9-64gb-4gb-ram-infinity-black-mobile-phone/592917643",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493177160/tecno-spark-9-64gb-4gb-ram-infinity-black-mobile-phone-digital-o493177160-p592917643-0-202207222123.jpeg",
+    heading: "Tecno Spark 9 64GB, 4GB RAM, Infini..",
+    price: "₹ 7,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 11,499.00",
+    save: "Save ₹ 3,500.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 23,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/redmi-note-11-se-64-gb-6-gb-ram-bifrost-blue-mobile-phone/594779644",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493178810/redmi-note-11-se-64-gb-6-gb-ram-bifrost-blue-mobile-phone-digital-o493178810-p594779644-0-202210221329.jpeg",
+    heading: "Redmi Note 11 SE 64 GB, 6 GB RAM, B..",
+    price: "₹ 12,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 16,999.00",
+    save: "Save ₹ 4,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 16,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/moto-g22-64-gb-4-gb-ram-iceberg-blue-mobile-phone/591220523",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492849923/moto-g22-64-gb-4-gb-ram-iceberg-blue-mobile-phone-digital-o492849923-p591220523-0-202204261414.jpeg",
+    heading: "Moto g22 64 GB, 4 GB RAM, Iceberg B..",
+    price: "₹ 9,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 11,999.00",
+    save: "Save ₹ 2,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 25,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/realme-c33-32-gb-3-gb-ram-night-sea-mobile-phone/594311454",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493177735/realme-c33-32-gb-3-gb-ram-night-sea-mobile-phone-digital-o493177735-p594311454-0-202210070509.jpeg",
+    heading: "Realme C33 32 GB, 3 GB RAM, Night S..",
+    price: "₹ 8,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 11,999.00",
+    save: "Save ₹ 3,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 7,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/apple-iphone-13-128-gb-midnight-black/590798548",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/491997699/apple-iphone-13-128-gb-midnight-black-digital-o491997699-p590798548-0-202208221207.jpeg",
+    heading: "Apple iPhone 13 128 GB, Midnight (B..",
+    price: "₹ 64,900.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 69,900.00",
+    save: "Save ₹ 5,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 31,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/tecno-spark-9-128gb-6gb-ram-sky-mirror-mobile-phone/592917646",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493177163/tecno-spark-9-128gb-6gb-ram-sky-mirror-mobile-phone-digital-o493177163-p592917646-0-202207222123.jpeg",
+    heading: "Tecno Spark 9 128GB, 6GB RAM, Sky M..",
+    price: "₹ 9,249.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 13,499.00",
+    save: "Save ₹ 4,250.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 18,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/apple-iphone-12-64-gb-black/590441378",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/491901528/apple-iphone-12-64-gb-black-digital-o491901528-p590441378-0-202112162016.jpeg",
+    heading: "Apple iPhone 12 64 GB, Black",
+    price: "₹ 48,900.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 59,900.00",
+    save: "Save ₹ 11,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 33,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/redmi-10-64-gb-4-gb-ram-caribbean-green-mobile-phone/591469937",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492849853/redmi-10-64-gb-4-gb-ram-caribbean-green-mobile-phone-digital-o492849853-p591469937-0-202205192214.jpeg",
+    heading: "Redmi 10 64 GB, 4 GB RAM, Caribbean..",
+    price: "₹ 9,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 14,999.00",
+    save: "Save ₹ 5,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 21,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/vivo-y16-64-gb-4-gb-ram-drizzling-gold-mobile-phone/594348586",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493178408/vivo-y16-64-gb-4-gb-ram-drizzling-gold-mobile-phone-digital-o493178408-p594348586-0-202210081530.jpeg",
+    heading: "Vivo Y16 64 GB, 4 GB RAM, Drizzlin..",
+    price: "₹ 12,499.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 15,999.00",
+    save: "Save ₹ 3,500.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 26,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/motorola-g71-128-gb-6-gb-ram-iris-blue-mobile-phone/591278373",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492849088/motorola-g71-128-gb-6-gb-ram-iris-blue-mobile-phone-digital-o492849088-p591278373-0-202205120857.jpeg",
+    heading: "Motorola G71, 128 GB, 6 GB RAM, Iri..",
+    price: "₹ 16,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 22,999.00",
+    save: "Save ₹ 6,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 39,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/motorola-e32s-32-gb-3-gb-ram-misty-silver-mobile-phone/591570044",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492849905/motorola-e32s-32-gb-3-gb-ram-misty-silver-mobile-phone-digital-o492849905-p591570044-0-202205242324.jpeg",
+    heading: "Motorola E32s 32 GB, 3 GB RAM, Mist..",
+    price: "₹ 7,499.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 12,299.00",
+    save: "Save ₹ 4,800.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 29,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/motorola-moto-g42-64gb-4gb-ram-atlantic-green-mobile-phone/592617134",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492850894/motorola-moto-g42-64gb-4gb-ram-atlantic-green-mobile-phone-digital-o492850894-p592617134-0-202207151324.jpeg",
+    heading: "Motorola Moto G42 64GB, 4GB RAM, At..",
+    price: "₹ 11,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 16,999.00",
+    save: "Save ₹ 5,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 29,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/redmi-10-128-gb-6-gb-ram-pacific-blue-mobile-phone/591469930",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492849855/redmi-10-128-gb-6-gb-ram-pacific-blue-mobile-phone-digital-o492849855-p591469930-0-202205192214.jpeg",
+    heading: "Redmi 10 128 GB, 6 GB RAM, Pacific..",
+    price: "₹ 11,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 16,999.00",
+    save: "Save ₹ 5,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 17,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/samsung-m13-5g-128-gb-6-gb-ram-aqua-green-mobile-phone/594137347",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493178367/samsung-m13-5g-128-gb-6-gb-ram-aqua-green-mobile-phone-digital-o493178367-p594137347-0-202209281630.jpeg",
+    heading: "Samsung M13 5G 128 GB, 6 GB RAM, Aq..",
+    price: "₹ 15,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 19,499.00",
+    save: "Save ₹ 3,500.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 34,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/vivo-y15c-32-gb-3-gb-ram-mystic-blue-mobile-phone/591474016",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/492850289/vivo-y15c-32-gb-3-gb-ram-mystic-blue-mobile-phone-digital-o492850289-p591474016-0-202208122017.jpeg",
+    heading: "VIVO Y15c 32 GB, 3 GB RAM, Mystic B..",
+    price: "₹ 9,499.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 14,490.00",
+    save: "Save ₹ 4,991.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 10,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/oneplus-10t-5g-128-gb-8-gb-ram-moonstone-black-mobile-phone/593407064",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/493177297/oneplus-10t-5g-128-gb-8-gb-ram-moonstone-black-mobile-phone-digital-o493177297-p593407064-0-202208042343.jpeg",
+    heading: "OnePlus 10T 5G 128 GB, 8 GB RAM, Mo..",
+    price: "₹ 44,999.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 49,999.00",
+    save: "Save ₹ 5,000.00",
+  },
+  {
+    dis_section: "off",
+    "dis_section 2": 17,
+    per_txt: "%",
+    "pro_detail href":
+      "https://www.jiomart.com/p/electronics/redmi-9a-sport-32-gb-3-gb-ram-carbon-black-smartphone/590837948",
+    imgSrc:
+      "https://www.jiomart.com/images/product/150x150/491998272/redmi-9a-sport-32-gb-3-gb-ram-carbon-black-smartphone-digital-o491998272-p590837948-0-202110292155.jpeg",
+    heading: "Redmi 9A Sport 32 GB 3 GB RAM, Carb..",
+    price: "₹ 7,799.00",
+    mrp: "M.R.P:",
+    rupees: "₹ 9,499.00",
+    save: "Save ₹ 1,700.00",
+  },
+];
+
+export const mobileTopBrands = [
+  {
+    image:
+      "https://www.jiomart.com/images/cms/aw_rbslider/slides/1667198627_05_Mobile.jpg",
+  },
+  {
+    image:
+      "https://www.jiomart.com/images/cms/aw_rbslider/slides/1667198627_05_Mobile.jpg",
+  },
+];
+
 export const shopCategory = [
   {
     image:
@@ -631,4 +983,213 @@ export const downData = [
     image:
       "https://www.jiomart.com/images/cms/aw_rbslider/slides/1661278487_Powered-TB-Banner-4---600X350.jpg",
   },
+];
+
+export const kitchenData = [
+  [
+    {
+      "dis_section 2": 17,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/sugar-m-2-kg/590108360",
+      imgSrc:
+        "https://www.jiomart.com/images/product/150x150/491696003/sugar-m-2-kg-product-images-o491696003-p590108360-0-202205272027.jpg",
+      heading: "Sugar (M) 2 kg",
+      price: "₹ 83.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 100.00",
+      save: "Save ₹ 17.00",
+    },
+    {
+      "dis_section 2": 14,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/chakki-atta-10-kg/491349660",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491349660/chakki-atta-10-kg-product-images-o491349660-p491349660-0-202206231932.jpg",
+      heading: "Chakki Atta 10 kg",
+      price: "₹ 339.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 395.00",
+      save: "Save ₹ 56.00",
+    },
+    {
+      "dis_section 2": 21,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/good-life-sugar-m-5-kg/491551495",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491551495/good-life-pure-crystal-sugar-m-5-kg-product-images-o491551495-p491551495-0-202205272019.jpg",
+      heading: "Good Life Pure Crystal Sugar (M) 5 kg",
+      price: "₹ 215.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 275.00",
+      save: "Save ₹ 60.00",
+    },
+    {
+      "dis_section 2": 18,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/tur-arhar-dal-2-kg/491417390",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491417390/tur-arhar-dal-2-kg-product-images-o491417390-p491417390-0-202203170610.jpg",
+      heading: "Tur / Arhar Dal 2 kg",
+      price: "₹ 246.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 300.00",
+      save: "Save ₹ 54.00",
+    },
+    {
+      "dis_section 2": 14,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/aashirvaad-superior-mp-whole-wheat-atta-10-kg/590150649",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/490750662/aashirvaad-superior-mp-whole-wheat-atta-10-kg-product-images-o490750662-p590150649-0-202203171046.jpg",
+      heading: "Aashirvaad Superior MP Whole Wheat Atta 10 kg",
+      price: "₹ 459.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 534.00",
+      save: "Save ₹ 75.00",
+    },
+    {
+      "dis_section 2": 38,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/good-life-almonds-500-g/491186625",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491186625/good-life-almonds-500-g-product-images-o491186625-p491186625-0-202205180139.jpg",
+      heading: "Good Life Almonds 500 g",
+      price: "₹ 339.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 549.00",
+      save: "Save ₹ 210.00",
+    },
+    {
+      "dis_section 2": 27,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/saffola-gold-rice-bran-based-blended-oil-3-l/590860238",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/492571049/saffola-gold-rice-bran-based-blended-oil-3-l-product-images-o492571049-p590860238-0-202203170449.jpg",
+      heading: "Saffola Gold Rice Bran Based Blended Oil 3 L",
+      price: "₹ 499.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 690.00",
+      save: "Save ₹ 191.00",
+    },
+    {
+      "dis_section 2": 20,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/gemini-refined-sunflower-oil-1-l-pouch/490012719",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/490012719/gemini-refined-sunflower-oil-1-l-product-images-o490012719-p490012719-0-202203151822.jpg",
+      heading: "Gemini Refined Sunflower Oil 1 L",
+      price: "₹ 184.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 230.00",
+      save: "Save ₹ 46.00",
+    },
+    {
+      "dis_section 2": 17,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/fortune-sun-lite-refined-sunflower-oil-5-l-jar/490005647",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/490005647/fortune-sunlite-refined-sunflower-oil-5-l-product-images-o490005647-p490005647-0-202205180140.jpg",
+      heading: "Fortune Sunlite Refined Sunflower Oil 5 L",
+      price: "₹ 945.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 1145.00",
+      save: "Save ₹ 200.00",
+    },
+    {
+      "dis_section 2": 25,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/moong-dal-2-kg/491432711",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491432711/moong-dal-2-kg-product-images-o491432711-p491432711-0-202205191636.jpg",
+      heading: "Moong Dal 2 kg",
+      price: "₹ 200.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 270.00",
+      save: "Save ₹ 70.00",
+    },
+    {
+      "dis_section 2": 18,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/surti-kolam-rice-10-kg/491349730",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491349730/surti-kolam-rice-10-kg-product-images-o491349730-p491349730-0-202205172238.jpg",
+      heading: "Surti Kolam Rice 10 kg",
+      price: "₹ 639.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 780.00",
+      save: "Save ₹ 141.00",
+    },
+    {
+      "dis_section 2": 10,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/tata-iodised-salt-1-kg/490000073",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/490000073/tata-iodised-salt-1-kg-product-images-o490000073-p490000073-0-202206021938.jpg",
+      heading: "Tata Iodised Salt 1 kg",
+      price: "₹ 25.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 28.00",
+      save: "Save ₹ 3.00",
+    },
+    {
+      "dis_section 2": 30,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/chana-dal-2-kg/491417393",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491417393/chana-dal-2-kg-product-images-o491417393-p491417393-0-202203170754.jpg",
+      heading: "Chana Dal 2 kg",
+      price: "₹ 140.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 200.00",
+      save: "Save ₹ 60.00",
+    },
+    {
+      "dis_section 2": 20,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/hmt-kolam-rice-10-kg/491349728",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491349728/hmt-kolam-rice-10-kg-product-images-o491349728-p491349728-0-202203171042.jpg",
+      heading: "HMT Kolam Rice 10 kg",
+      price: "₹ 499.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 630.00",
+      save: "Save ₹ 131.00",
+    },
+    {
+      "dis_section 2": 55,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/besan-1-kg/491349649",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/491349649/besan-1-kg-product-images-o491349649-p491349649-0-202203142037.jpg",
+      heading: "Besan 1 kg",
+      price: "₹ 75.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 170.00",
+      save: "Save ₹ 95.00",
+    },
+    {
+      "dis_section 2": 21,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/tata-sampann-high-protein-unpolished-tur-arhar-dal-1-kg/490830932",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/490830932/tata-sampann-unpolished-tur-arhar-dal-1-kg-product-images-o490830932-p490830932-0-202207201859.jpg",
+      heading: "Tata Sampann Unpolished Tur / Arhar Dal 1 kg",
+      price: "₹ 149.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 189.00",
+      save: "Save ₹ 40.00",
+    },
+    {
+      "dis_section 2": 17,
+      "pro_detail href":
+        "https://www.jiomart.com/p/groceries/aashirvaad-superior-mp-whole-wheat-atta-5-kg/590150648",
+      imgsrc:
+        "https://www.jiomart.com/images/product/150x150/490750661/aashirvaad-superior-mp-whole-wheat-atta-5-kg-product-images-o490750661-p590150648-0-202203170602.jpg",
+      heading: "Aashirvaad Superior MP Whole Wheat Atta 5 kg",
+      price: "₹ 232.00",
+      mrp: "M.R.p:",
+      rupees: "₹ 280.00",
+      save: "Save ₹ 48.00",
+    },
+  ],
 ];
