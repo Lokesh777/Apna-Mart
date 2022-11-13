@@ -3,6 +3,7 @@ import Routebar from "./Routebar";
 import Sidebar from "./Sidebar";
 import AllProducts from "./AllProducts";
 import { Box, Flex } from "@chakra-ui/react";
+import Footer from "../footer/Footer"
 const Product = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Product = () => {
         </Box>
       </Flex> */}
       <Sidebar />
+     <Footer/>
     </div>
   );
 };

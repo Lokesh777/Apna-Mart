@@ -11,7 +11,7 @@ const MainHome = () => {
       <Slider />
 
       <Section />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

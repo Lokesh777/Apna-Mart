@@ -110,11 +110,17 @@ const Basket = () => {
   },[cart.length])
   return (
     // -----------------Outer Box -------------
-    <Box w={{lg:"59%", md:"90"}} border="1px solid red" mt="5">
+    <Box w={{lg:"59%", md:"90"}} 
+    // border="1px solid red" 
+    mt="5">
      {/* -----------------inner Box ------------- */}
-      <Box w="95%" border="1px solid blue" m="auto">
+      <Box w="95%" 
+      // border="1px solid blue"
+       m="auto">
 
-        <Box w="93%" m="auto" mt="5" border="1px solid blue">
+        <Box w="93%" m="auto" mt="5" 
+        // border="1px solid blue"
+        >
  {/* -----------------Title Flex ------------- */}
  <Flex
           justifyContent={"space-between"}
@@ -158,18 +164,27 @@ const Basket = () => {
          {/* -----------------Item Box ------------- */}
 
          {cart.map((cart) => (
-               <Flex w="93%" border="1px solid red"
-               m="auto" mt="1">
+               <Flex w="93%" 
+               //boxShadow ="rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
+               border="1px solid grey"
+              //  border="1px solid red"
+
+m="auto" mt="1" p="2">
                  
-                 <Box w="15%" border="1px solid blue">
+                 <Box w="15%"     //  border="1px solid blue"
+                 >
                  <Image src={cart.image} alt={cart.title} />
                 
                  </Box>
-                  <Box border="1px solid blue"
+                  <Box 
+                  // border="1px solid blue"
+
                   textAlign="start" 
                    w="85%" pl="4" fontWeight="500">
                      <Text fontSize={"16px"} pb="2"
-                     border="1px solid red" mt="5">
+                     
+                    //  border="1px solid red" 
+                     mt="5">
                        {cart.title}
                      </Text>
                      <Text fontSize={"18px"} >  {cart.price}</Text>

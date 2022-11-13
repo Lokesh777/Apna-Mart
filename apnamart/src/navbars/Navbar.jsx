@@ -33,11 +33,13 @@ import {
   HStack,
   Box,
   Flex,
-  Link,
+ 
   Hide,
   Center,
   Divider,
 } from "@chakra-ui/react";
+
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -82,7 +84,7 @@ const Navbar = () => {
                   <chakra.button
                     bgColor={useColorModeValue("rgb(0, 38, 49)")}
                     color={useColorModeValue("white")}
-                    border={"1px solid whitesmoke"}
+                    // border={"1px solid whitesmoke"}
                     rounded={""}
                     w={40}
                     h={8}
@@ -102,7 +104,7 @@ const Navbar = () => {
                   <chakra.button
                     bgColor={useColorModeValue("rgb(0, 38, 49)")}
                     color={useColorModeValue("white")}
-                    border={"1px solid whitesmoke"}
+                    // border={"1px solid whitesmoke"}
                     rounded={""}
                     w={40}
                     h={8}
@@ -198,7 +200,10 @@ const Navbar = () => {
               </DrawerBody>
             </DrawerContent>
           </Drawer>
+          <Link to="/"> 
           <img className={styles.logoimage} src={APNAMAT} alt="Logo" />
+           </Link>
+         
         </div>
         <div className={styles.middlebar}>
           <Hide below={"md"}>
@@ -211,17 +216,22 @@ const Navbar = () => {
         </div>
 
         <div className={styles.rightbar}>
-          <flex className={styles.flexbar}>
+          <Link to = "/login" >   <flex className={styles.flexbar}>
             <HiUser fontSize={"30px"} color="white" />
+
             <Text marginTop={"3%"} marginLeft={"2"}>
               Sign up/Sign in
             </Text>
-          </flex>
+          </flex>  </ Link>
+        
           <flex className={styles.flexbar}>
             <CiShoppingCart fontSize={"30px"} color={"white"} />
+            <Link to="/cart">
             <Text marginTop={"5%"} marginLeft={"2"}>
               Cart
             </Text>
+            </Link>
+            
           </flex>
         </div>
       </nav>
@@ -239,7 +249,7 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo} >
             <MenuButton
-            border={"1px solid red"}
+            // border={"1px solid red"}
             
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
                 variant="ghost"
@@ -256,7 +266,8 @@ const Navbar = () => {
                 Groceries{onOpenTwo ? <ChevronUpIcon /> : <ChevronDownIcon />}
             </MenuButton>
             <MenuList onMouseEnter={onOpenTwo} onMouseLeave={onCloseThree}>
-                <MenuItem>Fruits & Vegetables</MenuItem>
+              <Link to="/product"><MenuItem>Fruits & Vegetables</MenuItem> </Link>
+                
                 <MenuItem>Dairy & Bekery</MenuItem>
                 <MenuItem>Staples</MenuItem>
                 <MenuItem>Snacks & Branded Food</MenuItem>
@@ -266,7 +277,7 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            border={"1px solid red"}
+            // border={"1px solid red"}
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
             variant="ghost"
             mx={{lg:4,md:3,sm:3,base:0}}
@@ -291,7 +302,7 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            border={"1px solid red"}
+            // border={"1px solid red"}
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
             variant="ghost"
             mx={{lg:4,md:3,sm:3,base:0}}
@@ -316,7 +327,7 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            border={"1px solid red"}
+            // border={"1px solid red"}
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
                 variant="ghost"
                 mx={{lg:4,md:3,sm:3,base:0}}
@@ -341,7 +352,7 @@ const Navbar = () => {
        
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            border={"1px solid red"}
+            // border={"1px solid red"}
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
             variant="ghost"
             mx={{lg:4,md:3,sm:3,base:0}}
@@ -373,7 +384,7 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            border={"1px solid red"}
+            // border={"1px solid red"}
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
                 variant="ghost"
                 mx={{lg:4,md:3,sm:3,base:0}}
@@ -402,7 +413,7 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            border={"1px solid red"}
+            // border={"1px solid red"}
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
             variant="ghost"
             mx={{lg:4,md:3,sm:3,base:0}}

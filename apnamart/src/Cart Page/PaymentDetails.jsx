@@ -2,6 +2,7 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useContext } from "react";
 import { TotalContext } from "../Context/TotalContext";
+import { Link } from "react-router-dom";
 const PaymentDetails = () => {
   // const cartData = async () =>{
   //   try{
@@ -23,9 +24,9 @@ const PaymentDetails = () => {
     <Box w="96%" m="auto" pos={"sticky"} top="1" zIndex="5" >
  <Box 
      borderRadius="2" w="100%"
-     border="1px solid red"
+     
       m="auto" mt="10" >
-      <Box w="90%" m="auto" mt="6" border="1px solid blue" >
+      <Box w="90%" m="auto" mt="6"  >
 
         <Text fontSize={"18px"}
          fontFamily="Arial Black"
@@ -34,7 +35,7 @@ const PaymentDetails = () => {
          pb="4"
          > Payment Details</Text>
 
-        <Box border="1px solid blue" >
+        <Box  >
           <Flex 
           borderBottom="1px solid grey"
            justifyContent={"space-between"}
@@ -55,9 +56,13 @@ const PaymentDetails = () => {
     </Box>
     <Flex justifyContent={"end"}
        fontSize="14px" mt="4"  >
+        <Link to ="/checkout">
+
         <Button bg="#008ECC" color="white">
           Place Order
         </Button>
+        </Link>
+       
       </Flex>
       
       
