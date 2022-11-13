@@ -13,10 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 
-// import AppStoreBadge from '@/components/AppStoreBadge';
-// import PlayStoreBadge from '@/components/PlayStoreBadge';
-
-const ListHeader = ({ children }: { children: ReactNode }) => {
+const ListHeader = ({ children }) => {
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}
@@ -90,6 +87,7 @@ export default function LargeWithAppLinksAndSocial() {
           </Stack>
 
           <Stack
+          // alignItems={"self-start"}
             align={"flex-start"}
             color={"rgb(97, 97, 98)"}
             fontFamily={"sans-serif"}
@@ -103,7 +101,7 @@ export default function LargeWithAppLinksAndSocial() {
               Please note that you are accessing the BETA Version of
               www.jiomart.com
             </Link>
-            <Link to={"#"}>
+            <Link to={"#"} >
               Should you encounter any bugs, glitches, lack of functionality,
               delayed deliveries, billing errors or other problems on the beta
               website, please email us on cs@jiomart.com
@@ -112,49 +110,11 @@ export default function LargeWithAppLinksAndSocial() {
             <ListHeader color={"black"} fontSize={"bold"}>
               DOWNLOAD APPS
             </ListHeader>
-            <Flex>
-              <chakra.button
-                bgColor={useColorModeValue("black")}
-                color={useColorModeValue("white")}
-                rounded={""}
-                w={40}
-                h={10}
-                cursor={"pointer"}
-                as={"c"}
-                display={"inline-flex"}
-                alignItems={"center"}
-                justifyContent={"center"}
-                transition={"background 0.3s"}
-                _hover={{
-                  bg: "",
-                }}
-                borderRadius={"10%"}
-                Link="https://play.google.com/store/games"
-              >
-                Google Play
-              </chakra.button>
-              <chakra.button
-                bgColor={useColorModeValue("black")}
-                color={useColorModeValue("white")}
-                rounded={""}
-                w={40}
-                h={10}
-                cursor={"pointer"}
-                as={"c"}
-                display={"inline-flex"}
-                alignItems={"center"}
-                justifyContent={"center"}
-                transition={"background 0.3s"}
-                _hover={{
-                  bg: "",
-                }}
-                marginLeft={"5%"}
-                borderRadius={"10%"}
-                Link="https://play.google.com/store/games"
-              >
-                App store
-              </chakra.button>
-            </Flex>
+            <Flex width={"45%"} >
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHUwqPViAb_9pi_Qfp_JfWqbIYfb2RqD68A&usqp=CAU" alt="" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvIxqWzg96N3lKYiagEsP6XZBgjUZhCe_Y5g&usqp=CAU" alt="" />
+                
+                </Flex>
           </Stack>
 
         </SimpleGrid>
