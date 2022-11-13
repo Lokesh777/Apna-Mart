@@ -1,0 +1,313 @@
+[
+    {
+      "List": "Categories",
+      "ListData": [
+        {
+          "sub-list": "Cups"
+        },
+        {
+          "sub-list": "Gardening"
+        },
+        {
+          "sub-list": "Pillow & Pillow Covers"
+        },
+        {
+          "sub-list": "Cookware & Non Stick"
+        },
+        {
+          "sub-list": "Interior care"
+        },
+        {
+          "sub-list": "Car/Motorbike Parts"
+        },
+        {
+          "sub-list": "Home Decor Accents"
+        },
+        {
+          "sub-list": "Wall Decor"
+        },
+        {
+          "sub-list": "Herbal & Ayurvedic"
+        },
+        {
+          "sub-list": "Bedsheets"
+        },
+        {
+          "sub-list": "Containers & Storage"
+        },
+        {
+          "sub-list": "Paint & Exterior care"
+        },
+        {
+          "sub-list": "Essential Kitchen Tools"
+        },
+        {
+          "sub-list": "Hooks"
+        },
+        {
+          "sub-list": "Cushion & Cushion Covers"
+        },
+        {
+          "sub-list": "Backpacks & Bags"
+        },
+        {
+          "sub-list": "Cloth Diapers"
+        },
+        {
+          "sub-list": "Health Supplements"
+        },
+        {
+          "sub-list": "Sporting Equipment & Accessories"
+        },
+        {
+          "sub-list": "Mats"
+        },
+        {
+          "sub-list": "Sports Nutrition"
+        },
+        {
+          "sub-list": "Flask & Bottle"
+        },
+        {
+          "sub-list": "Travel Accessories"
+        },
+        {
+          "sub-list": "Curtains & Accessories"
+        },
+        {
+          "sub-list": "Dinnerware"
+        },
+        {
+          "sub-list": "Laundry Accessories"
+        },
+        {
+          "sub-list": "Towels"
+        },
+        {
+          "sub-list": "Insect & Animal Control"
+        },
+        {
+          "sub-list": "Body Supports"
+        },
+        {
+          "sub-list": "Office Supplies"
+        },
+        {
+          "sub-list": "Early Learning"
+        },
+        {
+          "sub-list": "Table & Kitchen Linen"
+        },
+        {
+          "sub-list": "Dog Accessories"
+        },
+        {
+          "sub-list": "Other Stationery"
+        },
+        {
+          "sub-list": "Namkeen & Savoury Snacks"
+        },
+        {
+          "sub-list": "Living Room Furniture"
+        },
+        {
+          "sub-list": "Tableware"
+        },
+        {
+          "sub-list": "Dog Grooming"
+        },
+        {
+          "sub-list": "Bathroom Accessories"
+        },
+        {
+          "sub-list": "Bed Protector"
+        },
+        {
+          "sub-list": "Pooja Accessories"
+        },
+        {
+          "sub-list": "Blanket"
+        },
+        {
+          "sub-list": "Artificial Flora"
+        },
+        {
+          "sub-list": "Dog Toys"
+        },
+        {
+          "sub-list": "Cricket"
+        },
+        {
+          "sub-list": "Mirrors"
+        },
+        {
+          "sub-list": "Learning & Education"
+        },
+        {
+          "sub-list": "Trolley & Suitcases"
+        },
+        {
+          "sub-list": "Dried Seeds"
+        },
+        {
+          "sub-list": "Mixed Dry Fruits"
+        }
+      ]
+    },
+    {
+      "List": "Brand",
+      "ListData": [
+        {
+          "sub-list": "Whats Your Kick"
+        },
+        {
+          "sub-list": "feelitson"
+        },
+        {
+          "sub-list": "sleep nature's"
+        },
+        {
+          "sub-list": "Kuber Industries"
+        },
+        {
+          "sub-list": "Nirlon"
+        },
+        {
+          "sub-list": "CARMATE"
+        },
+        {
+          "sub-list": "Riara"
+        },
+        {
+          "sub-list": "KALARAMBH"
+        },
+        {
+          "sub-list": "Pranay"
+        },
+        {
+          "sub-list": "Lushomes"
+        },
+        {
+          "sub-list": "Kraft Seeds"
+        },
+        {
+          "sub-list": "Oshotto"
+        },
+        {
+          "sub-list": "PETS EMPIRE"
+        },
+        {
+          "sub-list": "JASPO"
+        },
+        {
+          "sub-list": "TrustBasket"
+        },
+        {
+          "sub-list": "LifeKrafts"
+        },
+        {
+          "sub-list": "JAAMSO ROYALS"
+        },
+        {
+          "sub-list": "RIDERSCART"
+        },
+        {
+          "sub-list": "SARAL HOME EASY LIVING"
+        },
+        {
+          "sub-list": "Tuelip"
+        },
+        {
+          "sub-list": "999Store"
+        },
+        {
+          "sub-list": "Kingsway"
+        },
+        {
+          "sub-list": "Om Books International"
+        },
+        {
+          "sub-list": "Herbal Hills"
+        },
+        {
+          "sub-list": "Fashion Bizz"
+        },
+        {
+          "sub-list": "Stealodeal"
+        },
+        {
+          "sub-list": "DivyaMantra"
+        },
+        {
+          "sub-list": "Bianca"
+        },
+        {
+          "sub-list": "Vaastu furnishings"
+        },
+        {
+          "sub-list": "TAIYO PLUSS DISCOVERY"
+        },
+        {
+          "sub-list": "INDIAN ART VILLA"
+        },
+        {
+          "sub-list": "THE LITTLE LOOKERS"
+        },
+        {
+          "sub-list": "Ankit International"
+        },
+        {
+          "sub-list": "Athom Trendz"
+        },
+        {
+          "sub-list": "CARIZO"
+        },
+        {
+          "sub-list": "Jaiccha"
+        },
+        {
+          "sub-list": "Chinmay Kids"
+        },
+        {
+          "sub-list": "UniqChoice"
+        },
+        {
+          "sub-list": "Target Publications"
+        },
+        {
+          "sub-list": "Divine Casa"
+        },
+        {
+          "sub-list": "Naturz Ayurveda"
+        },
+        {
+          "sub-list": "Lock & Lock"
+        },
+        {
+          "sub-list": "La elite"
+        },
+        {
+          "sub-list": "Plantex"
+        },
+        {
+          "sub-list": "TNC World Of Modern Utility Products"
+        },
+        {
+          "sub-list": "Teeny Weeny"
+        },
+        {
+          "sub-list": "Mkd2 Rise"
+        },
+        {
+          "sub-list": "PRISHA INDIA CRAFT"
+        },
+        {
+          "sub-list": "Story@Home"
+        },
+        {
+          "sub-list": "Coconut"
+        }
+      ]
+    }
+  ]
+  

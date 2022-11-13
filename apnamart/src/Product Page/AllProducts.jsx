@@ -1,3 +1,5 @@
+// const axios = require("axios").default 
+import axios from "axios"
 import {
   Box,
   Button,
@@ -9,21 +11,38 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import product from "./product.json";
-import axios from "axios"
+
 
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const AllProducts = () => {
+const AllProducts = ({headerImage}) => {
+
+
+  // ------------ Posting the Cart Data --------------
+   const postCart = async(ele) =>{
+    try{
+      await axios.post("", {
+        ...ele,
+        count : 1
+      });
+    } catch (e) {
+      console.log(e)
+    }
+      
+  }
+  // --------- Posted the Cart Data Successfully ----------
+
 
   const [fruit, setFruit] = useState([]);
   const [freshFruit, setFreshFruit] = useState([]);
   const [premium, setPremium] = useState([]);
 
   const [state , setState] = useState(true);
-  const toggleButton = () =>{
-    setState(!state)
+  const toggleButton = (ele) =>{
+    // setState(!state)
+    postCart(ele)
   }
   console.log(product);
 
@@ -60,6 +79,10 @@ const AllProducts = () => {
       mb="24px"
       p="16px 0px 16px 0px"
     >
+       <Box>
+        <Image  src={headerImage} alt="header"/>
+       </Box>
+       
       <Box w="97%" border="1px solid blue" m="auto">
         <Text mb="16px">All Products</Text>
         <Grid
@@ -120,7 +143,7 @@ const AllProducts = () => {
                 mb="7"
                 mt="4"
               _hover={{cursor:"pointer"}}
-              onClick = {toggleButton}
+              onClick = {toggleButton(ele)}
               >
                 <Text ml="3" mt="2" >
                   Add to Cart{" "}

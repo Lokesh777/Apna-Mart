@@ -1,7 +1,8 @@
 import { Box, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
-import axios from "axios"
+// import axios from "axios";
+const axios = require("axios").default 
 
 const ApplyCoupon = () => {
 

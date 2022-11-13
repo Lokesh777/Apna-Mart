@@ -28,17 +28,40 @@ app.post("/", async (req, res) =>{
         let userCart = await Cart.find({email});
        
          if(userCart.length>0){
+            let check = userCart[0].data.filter((pro) => pro.title === data.title)
            
-         let updated = await Cart.updateOne(
-            {email : email} , {$set : {data : [...userCart[0].data,data]}}
-            );
-            let userCart1 = await Cart.find({email});
-         return res.send(userCart1);
+
+           if(check.length>0){
+            // sameProduct[0].count = sameProduct.count + 1;
+            let sameProduct = userCart[0].data.map((product) => {
+                if(product.title === data.title){
+                    product.count = product.count + 1;
+                }
+                return product;
+            
+            } );
+          console.log(sameProduct)
+            let updated = await Cart.updateOne(
+                {email : email} , {$set : {data : sameProduct}}
+                );
+                let userCart1 = await Cart.find({email});
+             return res.send(userCart1);
+
+           } else{
+            let updated = await Cart.updateOne(
+                {email : email} , {$set : {data : [...userCart[0].data, data  ]}}
+                );
+                let userCart1 = await Cart.find({email});
+             return res.send(userCart1);
+           }
+             
+        
         
     //    let a = userCart[0].data;
     //     return res.send(a)
          }
          else{
+            data.count = 1;
             let updated = await Cart.create({
               ...req.body
             });
