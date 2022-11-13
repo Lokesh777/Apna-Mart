@@ -4,6 +4,7 @@ import {
   Box,
   Button,
   Grid,
+  Heading,
   HStack,
   Image,
   SimpleGrid,
@@ -11,13 +12,13 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import product from "./product.json";
-
+ import {DataSection} from "../Components/SubPages/DataSection" 
 
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const AllProducts = ({headerImage}) => {
+const AllProducts = ({headerImage , cartdata}) => {
 
 
   // ------------ Posting the Cart Data --------------
@@ -72,19 +73,10 @@ const AllProducts = ({headerImage}) => {
    getData();
   },[])
   return (
-    <Box
-      w={{lg:"77%", md : "100%", base:"100%"}}
-      border={"1px solid red"}
-      ml="5px"
-      mb="24px"
-      p="16px 0px 16px 0px"
-    >
-       <Box>
-        <Image  src={headerImage} alt="header"/>
-       </Box>
+   
        
-      <Box w="97%" border="1px solid blue" m="auto">
-        <Text mb="16px">All Products</Text>
+      <Box w="97%"  m="auto">
+        <Heading mb="16px" fontSize={"16px"} mt="1">All Products</Heading>
         <Grid
           templateColumns={{
             base: "repeat(1,1fr)",
@@ -96,18 +88,18 @@ const AllProducts = ({headerImage}) => {
           }}
           gap="1vw"
           w="100%"
-          border={"1px solid red"}
+          
         >
           {fruit.map((ele, i) => (
-            <Box key={i} borderRadius={"8px"} border="1px solid green">
-              <Box w="160px" h="160px" m="auto" border="1px solid grey" mt="5">
+            <Box key={i} borderRadius={"8px"} border="1px solid grey" >
+              <Box w="160px" h="160px" m="auto"  mt="5" >
                 <Image
                   _hover={{ w: "160px", h: "160px", transition: "0.4s", cursor:"pointer"}}
                   src={ele.image}
                   alt={ele.title}
                   w="150px"
                   h="150px"
-                  border="1px solid red"
+                  // border="1px solid red"
                 />
               </Box>
 
@@ -217,7 +209,7 @@ const AllProducts = ({headerImage}) => {
           ))}
         </Grid>
       </Box>
-    </Box>
+   
   );
 };
 
