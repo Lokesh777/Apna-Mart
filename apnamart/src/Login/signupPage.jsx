@@ -13,27 +13,40 @@ import {
     Text,
     useColorModeValue,
     Link,
+    Alert,
+    AlertIcon
   } from '@chakra-ui/react';
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import axios from 'axios';
-  
-
+import {useContext} from "react";
+import { TotalContext } from '../Context/TotalContext';
+import { useNavigate} from "react-router-dom"
 
   export default function SignupCard() {
     const [showPassword, setShowPassword] = useState(false);
     const [move, setMove] = useState(false);
-
+    const {emails , setEmails} = useContext(TotalContext);
     const [name,setName] =useState()
     const [email,setEmail] =useState()
     // const [data,setData] = useState()
     const [password,setPassword] =useState()
-
+   const navigate = useNavigate();
 const signup= async() =>{
     let res = await axios.post("http://localhost:8080/auth/signup",{ 
          name,email,password
     })
     let data = res.data;
+    setEmails(data);
+   
+    if(data !== email){
+
+      alert(`${data}`);
+    }else{
+      alert(`Sign up Successful..!`);
+
+    }
+    
     console.log(data);
 }
 const login= async() =>{
@@ -41,6 +54,19 @@ const login= async() =>{
          email,password
     })
     let data = res.data;
+    setEmails(data);
+     if(data !== email){
+      {alert(`${data}`)} }else{
+        navigate("/")
+      }
+      
+  //   return <>
+  //   <Alert status='error'>
+  //   <AlertIcon />
+  //   There was an error processing your request
+  // </Alert>
+  //   </>  
+ 
     console.log(data);
 }
 
@@ -54,6 +80,9 @@ const submitSignup = () =>{
  const SubmitLogin = () => {
      login()
  }
+//  if(email === emails){
+
+//  }
 
     return (
       <Flex

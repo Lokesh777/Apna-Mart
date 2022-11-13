@@ -31,8 +31,8 @@ const Title = () => {
     <Hide below="lg">
 
    
-    <HStack w="100%" border="1px solid blue" mt="5">
-      <Box w="33%" h="30px" border="1px solid blue">
+    <HStack w="100%"  mt="5">
+      <Box w="33%" h="30px" >
         <Text fontSize="24px" fontFamily="Arial Black" textAlign={"start"}>
           {" "}
           My Cart()
@@ -44,14 +44,14 @@ const Title = () => {
             state ? (
               <>
                 <Image src={ele.icon1} />
-                <Box width="40%" h="1px" mt="3" border="1px solid grey">
+                <Box width="40%" h="1px" mt="3" >
                   {" "}
                 </Box>
               </>
             ) : (
               <>
                 <Image src={ele.icon1} />
-                <Box width="50%" border="1px solid grey.100">
+                <Box width="50%" >
                   {" "}
                 </Box>
               </>

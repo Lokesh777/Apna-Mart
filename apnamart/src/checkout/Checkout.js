@@ -21,7 +21,7 @@ const Checkout = () =>{
   //     }
   const onToken = (token, addresses) => {
             console.log(token, addresses);
-            navigate("/home")
+            navigate("/")
           };
 
 

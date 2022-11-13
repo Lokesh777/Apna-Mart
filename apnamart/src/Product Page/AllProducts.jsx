@@ -13,7 +13,7 @@ import {
 import React from "react";
 import product from "./product.json";
  import {DataSection} from "../Components/SubPages/DataSection" 
-
+import { Link } from "react-router-dom";
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -64,6 +64,7 @@ const AllProducts = ({headerImage , cartdata}) => {
   const toggleButton = (ele) =>{
     // setState(!state)
     postCart(ele)
+    alert(`${ele.title} Added to cart`)
   }
   console.log(product);
 
@@ -157,10 +158,11 @@ const AllProducts = ({headerImage , cartdata}) => {
               _hover={{cursor:"pointer"}}
               onClick = {() =>toggleButton(ele)}
               >
+               
                 <Text ml="3" mt="2" >
                   Add to Cart{" "}
                 </Text>
-
+               
                 
                 <AddIcon
                   borderRadius={"50%"}
@@ -169,6 +171,8 @@ const AllProducts = ({headerImage , cartdata}) => {
                   boxSize="5"
                   mt="2"
                 />
+                
+                
               </Box> :
               <Box
               bg="white"

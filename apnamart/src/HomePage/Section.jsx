@@ -18,7 +18,7 @@ import MultipleSlide from "./Slide/MultipleSlide";
 import Sliding from "./Slide/Sliding";
 import ShopCategory from "./Slide/ShopCategory";
 import Category from "./Slide/Category";
-
+import Footer from '../footer/Footer'
 import { Link } from "react-router-dom";
 
 import TrendingSmartPhones from "./Slide/TrendingSmartPhones";
@@ -275,6 +275,7 @@ const Section = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
