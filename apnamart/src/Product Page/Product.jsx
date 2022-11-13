@@ -7,10 +7,7 @@ const Product = () => {
   return (
     <div>
       <Routebar />
-      <Flex >
-        <Sidebar w="30%" />
-        <AllProducts w="70%" />
-      </Flex>
+      <Sidebar w="30%" />
     </div>
   );
 };
