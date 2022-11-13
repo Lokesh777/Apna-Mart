@@ -23,10 +23,30 @@ const AllProducts = ({headerImage , cartdata}) => {
 
   // ------------ Posting the Cart Data --------------
    const postCart = async(ele) =>{
+    let {image, button,title,price} = ele;
+    console.log(image,button,title,price)
+   console.log(ele)
+    
     try{
-      await axios.post("", {
-        ...ele,
-        count : 1
+     
+      axios.post('http://localhost:8080/cart', {
+        email: '9',
+        data: 
+         { 
+           count : 1,
+           image : image,
+           button ,
+           title,
+           price 
+          },
+          
+        
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
       });
     } catch (e) {
       console.log(e)
@@ -135,7 +155,7 @@ const AllProducts = ({headerImage , cartdata}) => {
                 mb="7"
                 mt="4"
               _hover={{cursor:"pointer"}}
-              onClick = {toggleButton(ele)}
+              onClick = {() =>toggleButton(ele)}
               >
                 <Text ml="3" mt="2" >
                   Add to Cart{" "}

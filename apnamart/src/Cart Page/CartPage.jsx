@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {Box, Flex} from "@chakra-ui/react";
 import Title from './Title';
 import Basket from "./Basket"

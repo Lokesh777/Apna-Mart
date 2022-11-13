@@ -28,7 +28,7 @@ app.post("/signup", async (req, res) =>{
             let newUser = await Auth.create({
                 ...req.body
             });
-            return res.send(newUser);
+            return res.send(email);
         }
     } catch (e) {
         res.send("Please Fill All Credendtials");

@@ -1,8 +1,113 @@
+import axios from "axios"
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 
+import {useContext} from "react";
+import { TotalContext } from "../Context/TotalContext";
 const Basket = () => {
+ const [state , setState] = useState(false);
+  const [cart, setCart] = useState([]);
+  const {total , setTotal} = useContext(TotalContext);
+  const cartData = async () =>{
+    try{
+      const res = await axios("http://localhost:8080/cart/9");
+      const data = res.data;
+      console.log(data[0].data);
+      setCart(data[0].data);
+      setState(!state);
+    } 
+    catch(e){
+      console.log(e);
+    }
+        
+  }
+  let sum = total;
+  for(let i=0;i<cart.length;i++){
+    let a = cart[i].price.trim().split(' ');
+    let count = cart[i].count;
+    let p = +a[1] * (+count)
+    sum = sum + p;
+   
+  }
+  
+  console.log(total);
+
+  const postCart = async(ele) =>{
+    let {image, button,title,price} = ele;
+    console.log(image,button,title,price)
+   console.log(ele)
+    
+    try{
+     
+     let res = await axios.post('http://localhost:8080/cart', {
+        email: '9',
+        data: 
+         { 
+           count : 1,
+           image : image,
+           button ,
+           title,
+           price 
+          },
+          
+        
+      })
+      
+     let data = res.data;
+     setCart(data[0].data);
+     
+    } catch (e) {
+      console.log(e)
+    }
+      
+  }
+  const delCart = async(ele) =>{
+    let {image, button,title,price} = ele;
+    console.log(image,button,title,price)
+   console.log(ele)
+    
+    try{
+     
+     let res = await axios.post('http://localhost:8080/cart/del', {
+        email: '9',
+        data: 
+         { 
+           count : 1,
+           image : image,
+           button ,
+           title,
+           price 
+          },
+          
+        
+      })
+      let data = res.data;
+      setCart(data[0].data);
+    } catch (e) {
+      console.log(e)
+    }
+      
+  }
+  const addCart = (ele) =>{
+    postCart(ele)
+  }
+  const deleteCart = (ele) =>{
+    delCart(ele)
+  }
+  useEffect(() =>{
+    cartData();
+    let sum = 0;
+    for(let i=0;i<cart.length;i++){
+      let a = cart[i].price.trim().split(' ');
+      let count = cart[i].count;
+      let p = +a[1] * (+count)
+      sum = sum + p;
+    }
+    setTotal(sum);
+  },[cart.length])
   return (
     // -----------------Outer Box -------------
     <Box w={{lg:"59%", md:"90"}} border="1px solid red" mt="5">
@@ -52,45 +157,49 @@ const Basket = () => {
 
          {/* -----------------Item Box ------------- */}
 
-          <Flex w="93%" border="1px solid red"
-          m="auto" mt="1">
-            <Box w="15%" border="1px solid blue">
-            <Image src="https://www.jiomart.com/images/product/75x75/590000086/coconut-1-pc-approx-350-g-600-g-product-images-o590000086-p590000086-0-202203170206.jpg" alt="coco" />
-           
-            </Box>
-             <Box border="1px solid blue"
-             textAlign="start" 
-              w="85%" pl="4" fontWeight="500">
-                <Text fontSize={"16px"} pb="2"
-                border="1px solid red" mt="5">
-                  COOC
-                </Text>
-                
-                <Text fontSize={"18px"} >₹54.00</Text>
-               <Box >
-               <Text mt="1" fontSize={"12px"}>
-                sold by <Link color="#008ECC" textDecoration={"underline"}>Rel</Link>
-                </Text>
-                <Flex justifyContent={"end"} gap="3" pr="2"
-                
-                >
-                  <Box w="32px" h="32px" bg="#008ECC" borderRadius={"50%"} >
-                  <MinusIcon  color={"white"} boxSize="5" ml="1.5"/>
+         {cart.map((cart) => (
+               <Flex w="93%" border="1px solid red"
+               m="auto" mt="1">
                  
-                  </Box>
-                  <Text fontSize={"18px"}>5</Text>
-                  <Box w="32px" h="32px" bg="#008ECC" borderRadius={"50%"} >
-                  
-                  <AddIcon color={"white"} boxSize="5" ml="1.5" />
-                  </Box>
-                   
-                </Flex>
-               </Box>
+                 <Box w="15%" border="1px solid blue">
+                 <Image src={cart.image} alt={cart.title} />
                 
-            </Box>
-
-          </Flex>
-
+                 </Box>
+                  <Box border="1px solid blue"
+                  textAlign="start" 
+                   w="85%" pl="4" fontWeight="500">
+                     <Text fontSize={"16px"} pb="2"
+                     border="1px solid red" mt="5">
+                       {cart.title}
+                     </Text>
+                     <Text fontSize={"18px"} >  {cart.price}</Text>
+                     
+                    <Box >
+                    <Text mt="1" fontSize={"12px"}>
+                     sold by <Link color="#008ECC" textDecoration={"underline"}>Relience</Link>
+                     </Text>
+                     <Flex justifyContent={"end"} gap="3" pr="2"
+                     
+                     >
+                       <Box w="32px" h="32px" bg="#008ECC" borderRadius={"50%"} onClick={() => deleteCart(cart)} >
+                       <MinusIcon  color={"white"} boxSize="5" ml="1.5"/>
+                      
+                       </Box>
+                       <Text fontSize={"18px"}>{cart.count}</Text>
+                       <Box w="32px" h="32px" bg="#008ECC" borderRadius={"50%"} onClick={() => addCart(cart)} >
+                       
+                       <AddIcon color={"white"} boxSize="5" ml="1.5" />
+                       </Box>
+                        
+                     </Flex>
+                    </Box>
+                     
+                 </Box>
+     
+               </Flex>
+     
+              ))}
+         
 
       </Box>
     </Box>
