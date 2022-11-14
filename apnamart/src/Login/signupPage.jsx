@@ -35,7 +35,7 @@ import { useNavigate} from "react-router-dom"
     const [password,setPassword] =useState()
    const navigate = useNavigate();
 const signup= async() =>{
-    let res = await axios.post("http://localhost:8080/auth/signup",{ 
+    let res = await axios.post("https://apnamart-backend.onrender.com/auth/signup",{ 
          name,email,password
     })
     let data = res.data;
@@ -52,7 +52,7 @@ const signup= async() =>{
     console.log(data);
 }
 const login= async() =>{
-    let res = await axios.post("http://localhost:8080/auth/login",{ 
+    let res = await axios.post("https://apnamart-backend.onrender.com/auth/login",{ 
          email,password
     })
     let data = res.data;
