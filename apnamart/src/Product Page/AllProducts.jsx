@@ -29,7 +29,7 @@ const AllProducts = ({headerImage , cartdata}) => {
     
     try{
      
-      axios.post('http://localhost:8080/cart', {
+      axios.post('https://apnamart-backend.onrender.com/cart', {
         email: '11',
         data: 
          { 
@@ -66,22 +66,22 @@ const AllProducts = ({headerImage , cartdata}) => {
     postCart(ele)
     alert(`${ele.title} Added to cart`)
   }
-  console.log(product);
+  
 
   const getData = async () =>{
      try{
-        let res = await axios("http://localhost:8080/products");
+        let res = await axios("https://apnamart-backend.onrender.com/products/fruit");
         let data = res.data;
         // let freshFruis = data[0].freshFruis;
         console.log(data)
-        let Electronics = data.Electronics;
-
+        // let Electronics = data.Electronics;
+        let fruit = data.fruit;
         // let premium = data[0].premiumFruits;
-        setFruit(Electronics);
+         setFruit(fruit);
         // setFreshFruit(freshFruis);
         // setPremium(premium)
 
-        console.log(data.Electronics);
+        
      } 
      catch (e) {
          console.log(e);
