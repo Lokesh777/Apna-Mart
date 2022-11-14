@@ -22,11 +22,10 @@ app.get("/:email" , async (req,res) =>{
 
 app.post("/", async (req, res) =>{
     const {email, data} = req.body;
-    console.log(data)
-      console.log(email)
+  
     try{
         let userCart = await Cart.find({email});
-       
+       console.log(userCart)
          if(userCart.length>0){
             let check = userCart[0].data.filter((pro) => pro.title === data.title)
            
@@ -40,7 +39,7 @@ app.post("/", async (req, res) =>{
                 return product;
             
             } );
-          console.log(sameProduct)
+          
             let updated = await Cart.updateOne(
                 {email : email} , {$set : {data : sameProduct}}
                 );
@@ -98,6 +97,9 @@ app.post("/del", async (req, res) =>{
             // sameProduct[0].count = sameProduct.count + 1;
             let sameProduct = userCart[0].data.map((product) => {
                 if(product.title === data.title){
+                    // if(product.count==0){
+                    //     return;
+                 
                     product.count = Number(product.count) - 1;
                 }
                 return product;

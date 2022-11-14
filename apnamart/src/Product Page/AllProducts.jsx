@@ -30,7 +30,7 @@ const AllProducts = ({headerImage , cartdata}) => {
     try{
      
       axios.post('http://localhost:8080/cart', {
-        email: '9',
+        email: '11',
         data: 
          { 
            count : 1,

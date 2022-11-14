@@ -8,30 +8,26 @@ import { useState } from "react";
 import {useContext} from "react";
 import { TotalContext } from "../Context/TotalContext";
 const Basket = () => {
- const [state , setState] = useState(false);
+ 
   const [cart, setCart] = useState([]);
   const {total , setTotal} = useContext(TotalContext);
+  const [state , setState] = useState(total);
   const cartData = async () =>{
     try{
-      const res = await axios("http://localhost:8080/cart/9");
+      const res = await axios("http://localhost:8080/cart/11");
       const data = res.data;
+     
       console.log(data[0].data);
       setCart(data[0].data);
-      setState(!state);
+    
     } 
     catch(e){
       console.log(e);
     }
         
   }
-  let sum = total;
-  for(let i=0;i<cart.length;i++){
-    let a = cart[i].price.trim().split(' ');
-    let count = cart[i].count;
-    let p = +a[1] * (+count)
-    sum = sum + p;
-   
-  }
+  
+ 
   
   console.log(total);
 
@@ -43,7 +39,7 @@ const Basket = () => {
     try{
      
      let res = await axios.post('http://localhost:8080/cart', {
-        email: '9',
+        email: '11',
         data: 
          { 
            count : 1,
@@ -58,6 +54,8 @@ const Basket = () => {
       
      let data = res.data;
      setCart(data[0].data);
+     setState(state + 1);
+    
      
     } catch (e) {
       console.log(e)
@@ -72,7 +70,7 @@ const Basket = () => {
     try{
      
      let res = await axios.post('http://localhost:8080/cart/del', {
-        email: '9',
+        email: '11',
         data: 
          { 
            count : 1,
@@ -86,28 +84,41 @@ const Basket = () => {
       })
       let data = res.data;
       setCart(data[0].data);
+    
+      
     } catch (e) {
       console.log(e)
     }
       
   }
   const addCart = (ele) =>{
+
     postCart(ele)
+     let a = ele.price.trim().split(' ');
+    let count = +a
+    setState(state + count);
   }
   const deleteCart = (ele) =>{
     delCart(ele)
+    let a = ele.price.trim().split(' ');
+    let count = +a
+    setState(state - count);
   }
+  let sum = 0;
+  for(let i=0;i<cart.length;i++){
+    let a = cart[i].price.trim().split(' ');
+    let count = cart[i].count;
+    let p = +a[1] * (+count)
+    sum = sum + p;
+   
+  }
+  setTotal(sum);
   useEffect(() =>{
     cartData();
-    let sum = 0;
-    for(let i=0;i<cart.length;i++){
-      let a = cart[i].price.trim().split(' ');
-      let count = cart[i].count;
-      let p = +a[1] * (+count)
-      sum = sum + p;
-    }
-    setTotal(sum);
-  },[cart.length])
+   
+    
+    
+  },[state])
   return (
     // -----------------Outer Box -------------
     <Box w={{lg:"59%", md:"90"}} 
