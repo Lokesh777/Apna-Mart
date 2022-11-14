@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Style.module.css";
-import APNAMAT from "../logo/APNAMAT.jpeg";
+import logo from "../logo/logo.png";
 import { CiShoppingCart } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiUser } from "react-icons/hi";
@@ -50,7 +50,7 @@ const Navbar = () => {
     fontSize: { lg: "14px", sm: "10px", md: "12px" },
   };
   return (
-    <div>
+    <div className={styles.mainNavbar}>
       <nav className={styles.navbar}>
         <div className={styles.leftbar}>
           <Button
@@ -201,7 +201,7 @@ const Navbar = () => {
             </DrawerContent>
           </Drawer>
           <Link to="/"> 
-          <img className={styles.logoimage} src={APNAMAT} alt="Logo" />
+          <img className={styles.logoimage} src={logo} alt="Logo" />
            </Link>
          
         </div>
@@ -215,12 +215,12 @@ const Navbar = () => {
           </Hide>
         </div>
 
-        <div className={styles.rightbar}>
-          <Link to = "/login" >   <flex className={styles.flexbar}>
-            <HiUser fontSize={"30px"} color="white" />
+        <div  className={styles.rightbar}>
+          <Link  to = "/login" >   <flex className={styles.flexbar}>
+            <HiUser fontSize={"25px"} color="white" />
 
-            <Text marginTop={"3%"} marginLeft={"2"}>
-              Sign up/Sign in
+            <Text marginTop={"3%"} >
+              Login
             </Text>
           </flex>  </ Link>
         

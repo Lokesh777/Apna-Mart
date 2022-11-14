@@ -5,7 +5,7 @@
     width:99%;
     /* margin-top: 1rem;
     margin-left: 2rem; */;
-    border: 1px solid red;
+    
 
 }
 .tim{
@@ -64,7 +64,7 @@
  } 
 
  .dark{
-    border:1px solid rgb(219, 217, 217);
+    
     border-radius: 4px;
     height:10rem;
     width:12rem;

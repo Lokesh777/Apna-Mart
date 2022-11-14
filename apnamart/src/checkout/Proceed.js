@@ -5,8 +5,8 @@ import Form from "./Form";
 
 export default function Proceed() {
   return (
-    <Box className="App" my={10}>
-      <Heading as="h1">Checkout Form</Heading>
+    <Box   my={10} p={2} > 
+      <Heading as="h1" m={"-6rem 0 0 0"}>Checkout Form</Heading>
       {/* <Text>Proceed to Pay</Text> */}
       <Form />
     </Box>

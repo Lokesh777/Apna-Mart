@@ -72,27 +72,27 @@ useEffect(() => {
                     { GrocerieSlider.map((list, i) => {
                             return (
                               
-            <div className={styles.grow}>
-             
-                  <div className={styles.blow}>
-                        <div className={styles.discountdiv}>
-                            <p className={styles.discount}>33 % OFF</p>
-                            <img className={styles.discountimg} src="https://i.ibb.co/Yd3ZVDg/badge.png" 
-                            alt="badge" border="0" />
-                       </div>
-                             <img className={styles.reso} src={list.imgSrc} alt={list.n} />
-                             <p className={styles.heading}>{list.heading}</p>
-                             <p className={styles.price}>{list.price}</p>
-                              <p className={styles.mrp}>{list.mrp}<> </></p>
-                             <p className={styles.rupees}>{list.rupees}</p>
-                             <p className={styles.save}>{list.save}</p>
-                            <button className={styles.addtocart}>Add to cart
-                                <img className={styles.add} src="https://i.ibb.co/QHDtjF4/plus.png" 
-                                alt="plus" border="0" />
-                           </button>
-           
-              </div>
-              </div>
+                        <div className={styles.grow}>
+                      
+                            <div className={styles.blow}>
+                                  <div className={styles.discountdiv}>
+                                      <p className={styles.discount}>33 % OFF</p>
+                                      <img className={styles.discountimg} src="https://i.ibb.co/Yd3ZVDg/badge.png" 
+                                      alt="badge" border="0" />
+                                </div>
+                                      <img className={styles.reso} src={list.imgSrc} alt={list.n} />
+                                      <p className={styles.heading}>{list.heading}</p>
+                                      <p className={styles.price}>{list.price}</p>
+                                        <p className={styles.mrp}>{list.mrp}<> </></p>
+                                      <p className={styles.rupees}>{list.rupees}</p>
+                                      <p className={styles.save}>{list.save}</p>
+                                      <button className={styles.addtocart}>Add to cart
+                                          <img className={styles.add} src="https://i.ibb.co/QHDtjF4/plus.png" 
+                                          alt="plus" border="0" />
+                                    </button>
+                    
+                        </div>
+                        </div>
                             )
                         })
                     }

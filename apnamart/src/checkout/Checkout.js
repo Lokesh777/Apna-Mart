@@ -27,27 +27,31 @@ const Checkout = () =>{
 
     return (
         <>
-             <div>
+           <Box backgroundColor="#002631" p={"30"} paddingBottom={"10"} textAlign={"center"}>
+            
              
-                 <Box>
+                 <Box 
+                  textAlign={"center"}
+                  color={"white"}
+                  p={10}
+                  // marginBottom={"-3rem"}
+                  >
                    <Proceed/>
                  </Box>
-                 <Box display={"flex"} justifyContent="center" textAlign={"center"} >
-                   {/* <Button 
-                    onClick={()=>navigate("/home")}
-                    > */}
+                 <Box display={"flex"} justifyContent="center" paddingBottom={"30"} textAlign={"center"} >
+                  
                       <StripeCheckout 
                     stripeKey="pk_test_m9Dp6uaJcynCkZNTNS1nDR8B00AQg2m6vJ"
                     token={onToken}
                     />
-                    {/* </Button> */}
+                 
                  </Box>
                  
                    {/* <p>Please checkout:</p> */}
                     
         
-                    
-            </div>
+            </Box>   
+            
         </>
     )
 }

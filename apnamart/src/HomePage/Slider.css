@@ -4,7 +4,7 @@
     position: relative;
     box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
     margin-bottom:1rem;
-    margin-top: 8rem;
+    margin-top: 1rem;
   }
   @media screen and (max-width: 100%){
     .container-slider {
@@ -100,7 +100,7 @@
 }
 
 .vicks{
-  border: 1px solid red;
+  
   height:10rem;
   width:84.2rem;
   margin-top: 1rem;

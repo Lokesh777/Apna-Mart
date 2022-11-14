@@ -8,7 +8,7 @@ const MainHome = () => {
   return (
     <div>
       <Navbar />
-      <Slider />
+      {/* <Slider /> */}
 
       <Section />
       {/* <Footer /> */}

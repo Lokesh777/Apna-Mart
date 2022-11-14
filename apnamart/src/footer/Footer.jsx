@@ -48,15 +48,24 @@ const SocialButton = ({ children, label, to }) => {
 export default function LargeWithAppLinksAndSocial() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
+     p={5}
+      // border={"1px solid red"}   
+          bg={useColorModeValue("#002631", "gray.900")}
+      // color={useColorModeValue("gray.700", "gray.200")}
     >
-      <Container as={Stack} maxW={"6xl"} py={10}>
+      <Container 
+      as={Stack} 
+      maxW={"6xl"}
+        // py={10}
+        height={"20rem"}
+        width={"100%"}
+        
+        >
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8}>
           <Stack
             align={"flex-start"}
             textDecoration={"none"}
-            color={"rgb(97, 97, 98)"}
+            color={"white"}
             fontFamily={"sans-serif"}
             fontSize={"0.8rem"}
           >
@@ -73,7 +82,7 @@ export default function LargeWithAppLinksAndSocial() {
 
           <Stack
             align={"flex-start"}
-            color={"rgb(97, 97, 98)"}
+            color={"white"}
             fontFamily={"sans-serif"}
             fontSize={"0.8rem"}
           >
@@ -89,7 +98,7 @@ export default function LargeWithAppLinksAndSocial() {
           <Stack
           // alignItems={"self-start"}
             align={"flex-start"}
-            color={"rgb(97, 97, 98)"}
+            color={"white"}
             fontFamily={"sans-serif"}
             fontSize={"0.8rem"}
           >
@@ -104,13 +113,13 @@ export default function LargeWithAppLinksAndSocial() {
             <Link to={"#"} >
               Should you encounter any bugs, glitches, lack of functionality,
               delayed deliveries, billing errors or other problems on the beta
-              website, please email us on cs@jiomart.com
+              website, please email us on cs@apnamart.com
             </Link>
             <Link to={"#"}>Law Enforcement</Link>
-            <ListHeader color={"black"} fontSize={"bold"}>
+            <ListHeader color={"white"} fontSize={"bold"}>
               DOWNLOAD APPS
             </ListHeader>
-            <Flex width={"45%"} >
+            <Flex width={"35%"} >
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHUwqPViAb_9pi_Qfp_JfWqbIYfb2RqD68A&usqp=CAU" alt="" />
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvIxqWzg96N3lKYiagEsP6XZBgjUZhCe_Y5g&usqp=CAU" alt="" />
                 
@@ -122,23 +131,23 @@ export default function LargeWithAppLinksAndSocial() {
 
       <Box
         borderTopWidth={1}
-        borderStyle={"solid"}
+        borderStyle={"solid"} 
         borderColor={useColorModeValue("gray.200", "gray.700")}
       >
         <Container
           as={Stack}
-          maxW={"6xl"}
-          py={4}
+          maxW={"6xl"} fontSize={"14px"}
+          py={4} marginTop={"1rem"}
           direction={{ base: "column", md: "row" }}
           spacing={4}
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Text>
+          <Text color={"white"}>
             Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari
             5.1.5+, Google Chrome 80+
           </Text>
-          <Text>© 2022 All rights reserved. Reliance Retail Ltd</Text>
+          <Text color={"white"}>© 2022 All rights reserved. Reliance Retail Ltd</Text>
           
         </Container>
       </Box>

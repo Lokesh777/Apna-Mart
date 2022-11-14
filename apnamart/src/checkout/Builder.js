@@ -26,9 +26,15 @@ export default function Builder() {
   console.log(errors);
 
   return (
-    <Box>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <VStack>
+    <Box bg={"#04303c"}
+    rounded={'lg'}
+    maxWidth={"max-content"}
+    boxShadow = {"rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px"}
+    p={10}
+    >
+      <form onSubmit={handleSubmit(onSubmit)}       
+      >
+        <VStack spacing={2} mx={'auto'} maxW={'lg'} py={2} px={2}>
           <Input
             type="text"
             placeholder="First name"
