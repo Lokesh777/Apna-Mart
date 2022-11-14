@@ -1,5 +1,7 @@
 
-  [{
+  [
+    { 
+      "id" : 0,
     "fruit" :   [
       {
        "category_name": "https://www.jiomart.com/p/groceries/lentil-sprouts-200-g/590003515",
@@ -113,8 +115,11 @@
        "price": "₹ 37.00",
        "button": "Add to Cart"
      }
-   ],
-   "freshFruis" : [
+   ]}
+   ,
+   {
+    "id" : 1,
+    "freshFruis" : [
     {
       "category_name": "https://www.jiomart.com/p/groceries/tender-coconut-per-piece/590003564",
       "image": "https://www.jiomart.com/images/product/150x150/590003564/tender-coconut-cling-wrapped-1-pc-approx-900-g-1300-g-product-images-o590003564-p590003564-0-202203151146.jpg",
@@ -275,8 +280,11 @@
       "price": "₹ 155.00",
       "button": "Add to Cart"
     }
-   ],
-   "premiumFruits" : [
+   ]},
+
+   {
+    "id" : 2,
+    "premiumFruits" : [
     {
       "category_name": "https://www.jiomart.com/p/premiumfruits/medjoul-3-dates-2-go-premium-imported-50-g/592846374",
       "image": "https://www.jiomart.com/images/product/150x150/599991469/3-dates-2-go-medjoul-king-solomon-premium-imported-3-pcs-product-images-o599991469-p592846374-0-202209160907.jpg",
