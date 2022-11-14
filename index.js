@@ -4,11 +4,11 @@ const express = require("express");
 const cors = require("cors");
 
 const PORT =  process.env.PORT || 8080;
- const connect = require("./config/db");
+ const connect = require("./backEnd_1/src/config/db");
 
-const productRoute = require("./Products/product.route");
-const authRoute = require("./authenticationB/auth.route.js");
-const cartRoute = require("./Cart/cart.route")
+const productRoute = require("./backEnd_1/src/Products/product.route");
+const authRoute = require("./backEnd_1/src/authenticationB/auth.route.js");
+const cartRoute = require("./backEnd_1/src/Cart/cart.route")
 const app = express();
 
 app.use(express.json());
