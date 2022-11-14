@@ -10,7 +10,7 @@ app.get("/", async (req, res) => {
         let products = await Product.find();
        
       
-            let obj=products[0];
+            let obj=products[3];
           
          res.send(obj)
        

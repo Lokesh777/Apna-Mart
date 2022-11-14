@@ -73,15 +73,15 @@ const AllProducts = ({headerImage , cartdata}) => {
         let res = await axios("http://localhost:8080/products");
         let data = res.data;
         // let freshFruis = data[0].freshFruis;
-        
-        let fruits = data.fruit;
+        console.log(data)
+        let Electronics = data.Electronics;
 
         // let premium = data[0].premiumFruits;
-        setFruit(fruits);
+        setFruit(Electronics);
         // setFreshFruit(freshFruis);
         // setPremium(premium)
 
-        console.log(data.fruit);
+        console.log(data.Electronics);
      } 
      catch (e) {
          console.log(e);
