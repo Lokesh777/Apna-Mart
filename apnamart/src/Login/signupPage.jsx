@@ -23,6 +23,8 @@ import {useContext} from "react";
 import { TotalContext } from '../Context/TotalContext';
 import { useNavigate} from "react-router-dom"
 
+// import style from "./signup.module.css"
+
   export default function SignupCard() {
     const [showPassword, setShowPassword] = useState(false);
     const [move, setMove] = useState(false);
@@ -86,25 +88,29 @@ const submitSignup = () =>{
 
     return (
       <Flex
+      // className={style.MainDiv}
         minH={'100vh'}
         align={'center'}
         justify={'center'}
-        bg={useColorModeValue('gray.50', 'gray.800')}>
-        <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
+        bg={useColorModeValue('#002631', 'gray.800')}
+        >
+        <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}
+           
+        >
           <Stack align={'center'}>
 
           {!move ?
-            <Heading fontSize={'4xl'} textAlign={'center'}>
+            <Heading fontSize={'4xl'} textAlign={'center'} color={"white"} >
             Log In
             </Heading> 
             : 
-           <Heading fontSize={'4xl'} textAlign={'center'}>
+           <Heading fontSize={'4xl'} textAlign={'center'} color={"white"} >
               Sign up
             </Heading> }
 
             
-            <Text fontSize={'lg'} color={'gray.600'}>
-              to enjoy all of our cool features for our website 
+            <Text fontSize={'lg'} color={"white"} >
+              to enjoy all of our cool features 
             </Text>
           </Stack>
 
@@ -112,8 +118,12 @@ const submitSignup = () =>{
 
           {!move ? 
                                 (
-                                <Box>
-                                   <FormControl id="email" isRequired>
+                                <Box color={"white"}
+                                bg={"#04303c"}
+                                boxShadow = {"rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px"}
+                                p={16}
+                                >
+                                   <FormControl  id="email" isRequired>
                                         <FormLabel>Email address</FormLabel>
                                         <Input 
                                         value={email}
@@ -143,10 +153,10 @@ const submitSignup = () =>{
                                          onClick={SubmitLogin}
                                           loadingText="Submitting"
                                           size="lg"
-                                          bg={'blue.400'}
-                                          color={'white'}
+                                          bg={'white'}
+                                          color={'#064556'}
                                           _hover={{
-                                            bg: 'blue.500',
+                                            bg: 'white.500',
                                           }}>
                                           Log in
                                         </Button>
@@ -166,11 +176,14 @@ const submitSignup = () =>{
                                 </Box>
                                 ) 
                                 : (
-                                    <Box
+                                    <Box color={"white"}
                                     rounded={'lg'}
                                     // bg={useColorModeValue('white', 'gray.700')}
-                                    boxShadow={'lg'}
-                                    p={8}>
+                                    bg={"#04303c"}
+                                    boxShadow = {"rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px"}
+                                  
+                                    // boxShadow={'lg'}
+                                    p={16}>
                                     <Stack spacing={4}>
                                       {/* <HStack>
                                         <Box>
@@ -233,10 +246,10 @@ const submitSignup = () =>{
                                         onClick={submitSignup}
                                           loadingText="Submitting"
                                           size="lg"
-                                          bg={'blue.400'}
-                                          color={'white'}
+                                          bg={'white'}
+                                          color={'#064556'}
                                           _hover={{
-                                            bg: 'blue.500',
+                                            bg: 'white.500',
                                           }}>
                                           Sign up
                                         </Button>
