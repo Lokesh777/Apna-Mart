@@ -14,7 +14,7 @@ const Basket = () => {
   const [state , setState] = useState(total);
   const cartData = async () =>{
     try{
-      const res = await axios("https://apnamart-backend.onrender.com/cart/11");
+      const res = await axios("https://apnamart-backend.onrender.com/cart/12");
       const data = res.data;
      
       console.log(data[0].data);
@@ -39,7 +39,7 @@ const Basket = () => {
     try{
      
      let res = await axios.post('https://apnamart-backend.onrender.com/cart', {
-        email: '11',
+        email: '12',
         data: 
          { 
            count : 1,
@@ -70,7 +70,7 @@ const Basket = () => {
     try{
      
      let res = await axios.post('https://apnamart-backend.onrender.com/cart/del', {
-        email: '11',
+        email: '12',
         data: 
          { 
            count : 1,

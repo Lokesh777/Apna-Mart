@@ -6,13 +6,13 @@ import Basket from "./Basket"
 import ApplyCoupon from './ApplyCoupon';
 import PaymentDetails from './PaymentDetails';
 import Navbar from '../navbars/Navbar';
-import Footer from "../footer/Footer"
+// import Footer from "../footer/Footer"
 const CartPage = () => {
 
   return (
-    <Box w="100%">
+    <Box w="100%" >
       <Navbar />
-       <Box w="95%"  m="auto" mt="10" mb="10">
+       <Box w="cover"  m="auto" mt="10" mb="100" p="3rem">
          <Title />
          <Box display={{lg:"flex", md:"block"}}  h="987px" mt="5">
              <Basket />
@@ -22,7 +22,7 @@ const CartPage = () => {
              </Box>
          </Box>
        </Box>
-      <Footer />
+      {/* <Footer /> */}
     </Box>
   )
 }

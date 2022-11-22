@@ -30,7 +30,7 @@ const AllProducts = ({headerImage , cartdata}) => {
     try{
      
       axios.post('https://apnamart-backend.onrender.com/cart', {
-        email: '11',
+        email: '12',
         data: 
          { 
            count : 1,
