@@ -26,12 +26,13 @@ import TrendingSmartPhones from "./Slide/TrendingSmartPhones";
 import TopMobileBrands from "./Slide/TopMobileBrands";
 import BestSellingElectronics from "./Slide/BestSellingElectronics";
 import Kitchen from "./Slide/Kitchen";
+import { position } from "@chakra-ui/react";
 
 const Section = () => {
   return (
-    <div>
+    <div >
           
-            <div className={styles.belowSlider}>
+            <div className={styles.belowSlider} >
             <div className={styles.off}>
               <img
                 className={styles.imgie1}
@@ -46,7 +47,7 @@ const Section = () => {
               />
             </div>
             {/* slider needed */}
-            <div className={styles.Slit}>
+            <div className={styles.Slit}  >
               <Sliding />
             </div>
             {/* Trends image */}
@@ -268,10 +269,10 @@ const Section = () => {
                 </div>
               </div>
             </Link>
-            <div className={styles.posterimg3}>
-              <div className={styles.abovefooter}>
+            <div className={styles.posterimg3} >
+              <div className={styles.abovefooter} >
                 {downData.map((downdata) => (
-                  <div className={styles.poster}>
+                  <div className={styles.poster} >
                     <img
                       className={styles.mmm}
                       src={downdata.image}
@@ -281,19 +282,17 @@ const Section = () => {
                 ))}
               </div>
             </div>
-            {/* <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br /> */}
+           
           
         
             </div>
+            <div style={{height : "100px", width :"100%"}}></div>
+            <div style={{marginTop : "15rem"}}>
+            <LargeWithAppLinksAndSocial  />
 
-            <LargeWithAppLinksAndSocial/>
+            </div>
+
+            
     </div>
     
   );

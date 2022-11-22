@@ -52,6 +52,9 @@ export default function LargeWithAppLinksAndSocial() {
       // border={"1px solid red"}   
           bg={useColorModeValue("#002631", "gray.900")}
       // color={useColorModeValue("gray.700", "gray.200")}
+      
+    
+      
     >
       <Container 
       as={Stack} 
