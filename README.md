@@ -10,9 +10,16 @@ I worked on this project during unit-5 (Rct-201-NEM-101) construct week at Masai
 
 ## Using Languages & Tools 🧰
 React
+
 Chakra-UI
+
 Express
+
 External CSS
+
+Mongodb
+
+NodeJs
 
 
 ## Important Links 🔗 
