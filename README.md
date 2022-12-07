@@ -23,7 +23,7 @@ NodeJs
 
 
 ## Important Links 🔗 
-<a href="https://melodic-cajeta-0d68b5.netlify.app//">Deployed Netlify Link</a>
+<a href="https://fascinating-gnome-6dd32e.netlify.app/">Deployed Netlify Link</a>
 <br>
 <a href="https://github.com/Lokesh777/temporary-partner-4254">Github Link</a>
 
