@@ -33,9 +33,9 @@ NodeJs
 ## 👯 Collaborators
 <a href="https://github.com/gitsid1611">Lokesh kumar</a><br>
 <a href="https://github.com/Muskantamrakar">Muskan Tamrakar</a><br>
-<a href="https://github.com/furqan5921">Saurabh Mehta</a><br>
-<a href="https://github.com/debasistripathy01">Vivek Belwal</a><br>
-<a href="https://github.com/debasistripathy01">Ayush</a><br>
+<a href="https://github.com/saurabhsinghmehta">Saurabh Mehta</a><br>
+<a href="https://github.com/VivBelwal">Vivek Belwal</a><br>
+<a href="https://github.com/PratapAyush">Ayush</a><br>
 
 
 
