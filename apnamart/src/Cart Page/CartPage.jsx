@@ -1,12 +1,12 @@
 import React from 'react'
 
-import {Box, Flex} from "@chakra-ui/react";
+import {Box} from "@chakra-ui/react";
 import Title from './Title';
 import Basket from "./Basket"
 import ApplyCoupon from './ApplyCoupon';
 import PaymentDetails from './PaymentDetails';
-import Navbar from '../navbars/Navbar';
-// import Footer from "../footer/Footer"
+import Navbar from '../Components/navbars/Navbar';
+
 const CartPage = () => {
 
   return (
@@ -22,7 +22,6 @@ const CartPage = () => {
              </Box>
          </Box>
        </Box>
-      {/* <Footer /> */}
     </Box>
   )
 }

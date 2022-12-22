@@ -165,7 +165,7 @@ const Basket = () => {
             
             Shop groceries worth ₹1499 & get sugar at ₹9 (Offer is applicable
             only on products sold by Reliance Retail . For specific exclusions &
-            offer details refer  <a> T&C</a>)
+            offer details refer   T&C )
           </Text>
         </Flex>
         </Box>
@@ -176,13 +176,12 @@ const Basket = () => {
 
          {cart.map((cart) => (
                <Flex w="93%" 
-               //boxShadow ="rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
                border="1px solid grey"
               //  border="1px solid red"
-
-m="auto" mt="1" p="2">
+                m="auto" mt="1" p="2">
                  
-                 <Box w="15%"     //  border="1px solid blue"
+                 <Box w="15%"  
+                  //  border="1px solid blue"
                  >
                  <Image src={cart.image} alt={cart.title} />
                 

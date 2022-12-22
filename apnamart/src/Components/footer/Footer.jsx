@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import React from "react";
+
 import {
   Box,
   Container,
@@ -11,7 +12,6 @@ import {
   useColorModeValue,
   Flex,
 } from "@chakra-ui/react";
-import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const ListHeader = ({ children }) => {
   return (
@@ -21,7 +21,9 @@ const ListHeader = ({ children }) => {
   );
 };
 
-const SocialButton = ({ children, label, to }) => {
+const
+ SocialButton 
+= ({ children, label, to }) => {
   return (
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
@@ -48,14 +50,10 @@ const SocialButton = ({ children, label, to }) => {
 export default function LargeWithAppLinksAndSocial() {
   return (
     <Box
-     p={5}
+         p={5}
       // border={"1px solid red"}   
-          bg={useColorModeValue("#002631", "gray.900")}
-      // color={useColorModeValue("gray.700", "gray.200")}
-      
-    
-      
-    >
+          bg={useColorModeValue("#002631", "gray.900")}     
+         >
       <Container 
       as={Stack} 
       maxW={"6xl"}
