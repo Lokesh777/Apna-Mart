@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import Slider from "react-slick";
 import styles from "./Slide.module.css";
 import { 
-  // GrocerieSlider,
+ 
    SmartPhonesSlider } from "../../data";
 
 const TrendingSmartPhones = () => {

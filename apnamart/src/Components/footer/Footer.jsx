@@ -51,7 +51,7 @@ export default function LargeWithAppLinksAndSocial() {
   return (
     <Box
          p={5}
-      // border={"1px solid red"}   
+    
           bg={useColorModeValue("#002631", "gray.900")}     
          >
       <Container 

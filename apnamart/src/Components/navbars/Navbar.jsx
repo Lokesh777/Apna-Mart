@@ -74,7 +74,7 @@ const Navbar = () => {
                   <chakra.button
                     bgColor={useColorModeValue("rgb(0, 38, 49)")}
                     color={useColorModeValue("white")}
-                    // border={"1px solid whitesmoke"}
+                 
                     rounded={""}
                     w={40}
                     h={8}
@@ -85,7 +85,7 @@ const Navbar = () => {
                     justifyContent={"center"}
                     transition={"background 0.3s"}
                     _hover={{
-                      bg: "",
+                      bg: "grey",
                     }}
                     Link="https://play.google.com/store/games"
                   >
@@ -94,7 +94,7 @@ const Navbar = () => {
                   <chakra.button
                     bgColor={useColorModeValue("rgb(0, 38, 49)")}
                     color={useColorModeValue("white")}
-                    // border={"1px solid whitesmoke"}
+
                     rounded={""}
                     w={40}
                     h={8}
@@ -105,7 +105,7 @@ const Navbar = () => {
                     justifyContent={"center"}
                     transition={"background 0.3s"}
                     _hover={{
-                      bg: "",
+                      bg: "grey",
                     }}
                     marginLeft={"5%"}
                   >
@@ -226,7 +226,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className={styles.secondiv}>
+      <div className={styles.secondiv} columns={{ base: 1, sm: 2, md: 3 }}>
         <Flex fontSize={"14"} gap={{ lg: "5px" }} width={"8%"}  marginLeft={{ lg: "10px", md: "5px", sm: "2px" }}>
           <HiLocationMarker fontSize={"30px"} color={"grey"} />
           <Text
@@ -239,13 +239,11 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo} >
             <MenuButton
-            // border={"1px solid red"}
             
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
                 variant="ghost"
                 mx={{lg:4,md:3,sm:3,base:0}}
-                // py={[1, 2, 2]}
-                // px={4}
+            
                 borderRadius={5}
                 _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                 aria-label="Courses"
@@ -267,12 +265,11 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            // border={"1px solid red"}
+         
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
             variant="ghost"
             mx={{lg:4,md:3,sm:3,base:0}}
-                // py={[1, 2, 2]}
-                // px={4}
+             
                 borderRadius={5}
                 _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                 aria-label="Courses"
@@ -292,12 +289,11 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            // border={"1px solid red"}
+          
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
             variant="ghost"
             mx={{lg:4,md:3,sm:3,base:0}}
-                // py={[1, 2, 2]}
-                // px={4}
+             
                 borderRadius={5}
                 _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                 aria-label="Courses"
@@ -317,12 +313,11 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            // border={"1px solid red"}
+
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
                 variant="ghost"
                 mx={{lg:4,md:3,sm:3,base:0}}
-                // py={[1, 2, 2]}
-                // px={4}
+               
                 borderRadius={5}
                 _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                 aria-label="Courses"
@@ -342,12 +337,11 @@ const Navbar = () => {
        
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            // border={"1px solid red"}
+         
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
             variant="ghost"
             mx={{lg:4,md:3,sm:3,base:0}}
-                // py={[1, 2, 2]}
-                // px={4}
+             
                 borderRadius={5}
                 _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                 aria-label="Courses"
@@ -374,12 +368,11 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            // border={"1px solid red"}
+       
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
                 variant="ghost"
                 mx={{lg:4,md:3,sm:3,base:0}}
-                // py={[1, 2, 2]}
-                // px={4}
+            
                 borderRadius={5}
                 _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                 aria-label="Courses"
@@ -403,12 +396,11 @@ const Navbar = () => {
 
         <Menu isOpen={onOpenTwo}>
             <MenuButton
-            // border={"1px solid red"}
+          
             fontSize={{ lg: "14px", md: "12px", sm: "10px",base:"10px" }}
             variant="ghost"
             mx={{lg:4,md:3,sm:3,base:0}}
-                // py={[1, 2, 2]}
-                // px={4}
+         
                 borderRadius={5}
                 _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                 aria-label="Courses"
