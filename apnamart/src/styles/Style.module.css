@@ -8,10 +8,9 @@
   }
 
   .navbar {
-    
-  /* border: 1px solid yellow; */
+
   background-color: rgb(0, 38, 49);
-  /* border: 1px solid black; */
+ 
   width: 100%;
   height: 80px;
   display: grid;
@@ -22,34 +21,27 @@
     width: 140px;
     height: 70px;
     margin-left: 2%;
-    /* border: 1px solid red ; */
   }
   .middlebar {
-     /* border: 1px solid greenyellow;  */
-     width: 52vw;
-    /* height: 50px; */
-    /* margin-left: -45%; */
+     width: 52vw
     
   }
   .inputbox{
-    /* border: 1px solid rgb(32, 120, 219); */
+
     width: 100%;
     margin-right: 10vw;
     padding: 5px;
-    /* border-radius: 5px; */
+
     margin-top: 20px; 
-    /* border: 1px solid black;  */
-    /* border: none; */
+
   }
   .leftbar { 
-    /* border: 1px solid rgb(115, 14, 209); */
     display: flex;
     align-items: center;
     width: 50%;
     height: 80px;
   } 
   .rightbar{
-    /* border: 1px solid rgb(196, 13, 150);  */
      align-items: center;
     display: flex;
     column-gap: 5vw;
@@ -65,30 +57,19 @@
     margin-top:  90px; 
    }
   .secondiv{
-    /* border: 1px solid black; */
     background: rgb(250, 247, 247);
     height: 50px;
     width: 100%;
     display: flex;
-    /* gap: 1%; */
     padding-top: 9px;
   }
   .sum{
     font-size: 16px;
   }
-  /* @media screen and (max-width: 600px) {
-   .sum {font-size: 12px};
-  }
-  
-  @media screen and (min-width: 300px) {
-    .sum {font-size: 8px};
-    
-  } */
 
   @media screen and (max-width: 900px) and (min-width: 600px) {
     .sum {font-size: 12px};
     .secondiv{
-      /* border: 1px solid black; */
       background: rgb(250, 247, 247);
       height: 50px;
       width: 100%;
@@ -99,15 +80,12 @@
       
     }
     .middlebar {
-      /* border: 1px solid greenyellow;  */
       width: 150%;
-     /* height: 50px; */
      margin-left: -45%;
      display: none;
      
    }
    .rightbar{
-    /* border: 1px solid rgb(196, 13, 150);  */
      align-items: center;
     display: flex;
     column-gap: 160px;
@@ -119,7 +97,6 @@
     width: 78px;
     height: 78px;
     margin-left: 4%;
-    /* border: 1px solid red ; */
   }
    
   }
@@ -127,7 +104,6 @@
   
     .sum {font-size: 10px};
     .secondiv{
-      /* border: 1px solid black; */
       background: rgb(250, 247, 247);
       height: 50px;
       width: 100%;
@@ -136,9 +112,7 @@
       padding-top: 9px;
     }
     .navbar {
-      /* border: 1px solid yellow; */
       background-color: rgb(0, 38, 49);
-      /* border: 1px solid black; */
       width: 100%;
       height: 80px;
       display: grid;
@@ -150,7 +124,6 @@
      
    }
    .rightbar{
-    /* border: 1px solid rgb(196, 13, 150);  */
      align-items: center;
     display: flex;
     column-gap: 40px;
@@ -162,12 +135,9 @@
     width: 78px;
     height: 78px;
     margin-left: 5%;
-    /* border: 1px solid red ; */
   }
   .navbar {
-    /* border: 1px solid yellow; */
     background-color: rgb(0, 38, 49);
-    /* border: 1px solid black; */
     width: 100%;
     height: 80px;
     display: grid;
@@ -180,6 +150,3 @@
     
  }
  
- .dat{
-  /* border: 1px solid red; */
- }
