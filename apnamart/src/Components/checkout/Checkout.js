@@ -1,4 +1,4 @@
-import { Box, Button, Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,16 +9,6 @@ const Checkout = () =>{
 
   const navigate=useNavigate()
 
-  // const onToken = (token) => {
-  //       fetch('/save-stripe-token', {
-  //         method: 'POST',
-  //         body: JSON.stringify(token),
-  //       }).then(response => {
-  //         response.json().then(data => {
-  //           alert(`We are in business, ${data.email}`);
-  //         });
-  //       });
-  //     }
   const onToken = (token, addresses) => {
             console.log(token, addresses);
             navigate("/")

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Style.module.css";
+import styles from "../../styles/Style.module.css";
 import logo from "../logo/logo.png";
 import { CiShoppingCart } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -12,11 +12,9 @@ import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
   Button,
   useDisclosure,
   Text,
@@ -26,29 +24,21 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuGroup,
-  MenuDivider,
-  MenuOptionGroup,
-  MenuItemOption,
-  HStack,
-  Box,
   Flex,
- 
   Hide,
-  Center,
-  Divider,
 } from "@chakra-ui/react";
 
 import {Link} from "react-router-dom"
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { isOpenOne, onOpenTwo, onCloseThree } = useDisclosure();
-  const [placement, setPlacement] = React.useState("left");
+  const { 
+    // isOpenOne,
+     onOpenTwo, onCloseThree } = useDisclosure();
+  const [placement,
+    //  setPlacement
+    ] = React.useState("left");
 
-  const style = {
-    fontSize: { lg: "14px", sm: "10px", md: "12px" },
-  };
   return (
     <div className={styles.mainNavbar}>
       <nav className={styles.navbar}>

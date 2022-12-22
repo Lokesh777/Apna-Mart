@@ -1,7 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
 import { CategoriesSideBar } from "./SubPages/CategoriesSideBar";
-import AllProducts from "../Product Page/AllProducts";
 import { DataSection } from "./SubPages/DataSection";
 export const SubPage = ({ headerImage, menudata, cartdata }) => {
   return (

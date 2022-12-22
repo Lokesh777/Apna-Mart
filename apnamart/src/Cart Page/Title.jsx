@@ -6,10 +6,13 @@ import checkList1 from "./Logo/checkList1.png";
 import checkList2 from "./Logo/checkList2.png";
 import creditcard1 from "./Logo/creditcard1.png";
 import creditcard2 from "./Logo/creditcard2.png";
-import creditcard3 from "./Logo/creditcard3.png";
 
 const Title = () => {
-  const [state, setState] = useState(true);
+
+  const [state,
+    //  setState
+  ] = useState(true);
+  
   const track = [
     {
       page: "Your Cart",
@@ -30,36 +33,36 @@ const Title = () => {
   return (
     <Hide below="lg">
 
-   
-    <HStack w="100%"  mt="5">
-      <Box w="33%" h="30px" >
-        <Text fontSize="24px" fontFamily="Arial Black" textAlign={"start"}>
-          {" "}
-          My Cart()
-        </Text>
-      </Box>
-      <Flex w="67%" h="30px" justifyContent={"end"}>
-        <Flex w="60%" h="30px" gap={"5%"} justifyContent={"end"}>
-          {track.map((ele,i) =>
-            state ? (
-              <>
-                <Image src={ele.icon1} />
-                <Box width="40%" h="1px" mt="3" >
-                  {" "}
-                </Box>
-              </>
-            ) : (
-              <>
-                <Image src={ele.icon1} />
-                <Box width="50%" >
-                  {" "}
-                </Box>
-              </>
-            )
-          )}
+
+      <HStack w="100%" mt="5">
+        <Box w="33%" h="30px" >
+          <Text fontSize="24px" fontFamily="Arial Black" textAlign={"start"}>
+            {" "}
+            My Cart()
+          </Text>
+        </Box>
+        <Flex w="67%" h="30px" justifyContent={"end"}>
+          <Flex w="60%" h="30px" gap={"5%"} justifyContent={"end"}>
+            {track.map((ele, i) =>
+              state ? (
+                <>
+                  <Image src={ele.icon1} />
+                  <Box width="40%" h="1px" mt="3" >
+                    {" "}
+                  </Box>
+                </>
+              ) : (
+                <>
+                  <Image src={ele.icon1} />
+                  <Box width="50%" >
+                    {" "}
+                  </Box>
+                </>
+              )
+            )}
+          </Flex>
         </Flex>
-      </Flex>
-    </HStack>
+      </HStack>
     </Hide>
   );
 };

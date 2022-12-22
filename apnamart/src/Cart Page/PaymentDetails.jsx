@@ -4,22 +4,14 @@ import { useContext } from "react";
 import { TotalContext } from "../Context/TotalContext";
 import { Link } from "react-router-dom";
 const PaymentDetails = () => {
-  // const cartData = async () =>{
-  //   try{
-  //     const res = await axios("http://localhost:8080/cart/9");
-  //     const data = res.data;
-  //     console.log(data[0].data);
-  //     setCart(data[0].data)
-  //   } 
-  //   catch(e){
-  //     console.log(e);
-  //   }
-        
-  // }
-  const {total , setTotal} = useContext(TotalContext);
+  const {total
+    //  , setTotal
+    } = useContext(TotalContext);
+
   useEffect(() =>{
 
   },[total]);
+  
   return (
     <Box w="96%" m="auto" pos={"sticky"} top="1" zIndex="5" >
  <Box 

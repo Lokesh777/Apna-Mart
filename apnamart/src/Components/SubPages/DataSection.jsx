@@ -1,15 +1,11 @@
 import {
   Box,
   Flex,
-  Grid,
-  GridItem,
-  Heading,
   HStack,
   Image,
   Text,
 } from "@chakra-ui/react";
 import { SortButton } from "./SortButton";
-import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 import AllProducts from "../../Product Page/AllProducts";
 export const changeNumber = (val) => {
@@ -18,7 +14,9 @@ export const changeNumber = (val) => {
   return Number(number);
 };
 export const DataSection = ({ headerImage, cartdata }) => {
-  const [data, setData] = useState(cartdata);
+  const [
+    // data,
+     setData] = useState(cartdata);
 
   let sortdata = [...cartdata];
   const handleSort = (text) => {

@@ -18,15 +18,11 @@ import MultipleSlide from "./Slide/MultipleSlide";
 import Sliding from "./Slide/Sliding";
 import ShopCategory from "./Slide/ShopCategory";
 import Category from "./Slide/Category";
-import LargeWithAppLinksAndSocial from '../footer/Footer'
+import LargeWithAppLinksAndSocial from '../Components/footer/Footer'
 import { Link } from "react-router-dom";
-
 import TrendingSmartPhones from "./Slide/TrendingSmartPhones";
-
-import TopMobileBrands from "./Slide/TopMobileBrands";
 import BestSellingElectronics from "./Slide/BestSellingElectronics";
 import Kitchen from "./Slide/Kitchen";
-import { position } from "@chakra-ui/react";
 
 const Section = () => {
   return (

@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import Slider from "react-slick";
 import styles from "./Slide.module.css";
-import { GrocerieSlider, mobileTopBrands, SmartPhonesSlider } from "../../data";
+import {mobileTopBrands } from "../../data";
 
 const TopMobileBrands
  = () => {

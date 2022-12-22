@@ -1,19 +1,14 @@
-// const axios = require("axios").default 
+
 import axios from "axios"
 import {
   Box,
-  Button,
   Grid,
   Heading,
   HStack,
   Image,
-  SimpleGrid,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import product from "./product.json";
- import {DataSection} from "../Components/SubPages/DataSection" 
-import { Link } from "react-router-dom";
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -55,14 +50,12 @@ const AllProducts = ({headerImage , cartdata}) => {
   }
   // --------- Posted the Cart Data Successfully ----------
 
-
   const [fruit, setFruit] = useState([]);
-  const [freshFruit, setFreshFruit] = useState([]);
-  const [premium, setPremium] = useState([]);
+  const [state ,
+    //  setState
+  ] = useState(true);
 
-  const [state , setState] = useState(true);
   const toggleButton = (ele) =>{
-    // setState(!state)
     postCart(ele)
     alert(`${ele.title} Added to cart`)
   }
@@ -202,34 +195,6 @@ const AllProducts = ({headerImage , cartdata}) => {
             </Box>
               }
 
-              {/* <Box
-                bg=" #008ECC"
-                w="144px"
-                h="37px"
-                fontSize={"14px"}
-                margin="auto"
-                fontFamily="Arial Black"
-                borderRadius={"4px"}
-                color="white"
-                display={"flex"}
-               gap="5"
-                mb="7"
-                mt="4"
-              _hover={{cursor:"pointer"}}
-              >
-                <Text ml="3" mt="2" >
-                  Add to Cart{" "}
-                </Text>
-
-                
-                <AddIcon
-                  borderRadius={"50%"}
-                  border="1px solid grey"
-                  p="3px"
-                  boxSize="5"
-                  mt="2"
-                />
-              </Box> */}
             </Box>
           ))}
         </Grid>
