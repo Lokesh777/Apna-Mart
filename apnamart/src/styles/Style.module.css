@@ -27,14 +27,46 @@
     
   }
   .inputbox{
+
     border-radius:  16px;
     width: 100%;
     margin-right: 10vw;
     padding: 5px;
     cursor: pointer;
+
+
+    width: 80%;
+    /* margin-right: 10vw; */
+    padding: 5px;
+   border-inline-color: white;
+   color:aliceblue;
+
     margin-top: 20px; 
 
   }
+   .inputboxBtn{
+    /* margin-right: 10vw; */
+    margin-top: 20px; 
+    color: aliceblue;
+    margin-left: 1rem ;
+   }
+   .inputboxBtn:hover{
+    /* background-color: rgb(21, 5, 36); */
+    color: beige;
+   }
+   .ResultBox{
+    text-align: center;
+   }
+   .searchData{
+    text-align: center;
+   
+   }
+.searchData:hover{
+transform: scale(1.1);
+background-color: rgb(37, 35, 71);
+color: aliceblue;
+}
+
   .leftbar { 
     display: flex;
     align-items: center;
@@ -93,9 +125,61 @@
     margin-right: 5px; 
    } 
    .logoimage{
+
     width: 48px;
     height: 48px;
     margin-left: 2%;
+
+    width: 78px;
+    height: 78px;
+    margin-left: 4%;
+  }
+  
+  }
+  @media screen and (max-width: 600px)  {
+  
+    .sum {font-size: 10px};
+    .secondiv{
+      background: rgb(250, 247, 247);
+      height: 50px;
+      width: 100%;
+      display: flex;
+      gap: 5px;
+      padding-top: 9px;
+    }
+    .navbar {
+      background-color: rgb(0, 38, 49);
+      width: 100%;
+      height: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      }
+    .middlebar {
+      
+     display: none;
+     
+   }
+   .rightbar{
+     align-items: center;
+    display: flex;
+    column-gap: 40px;
+
+    
+    margin-left: 5px; 
+   } 
+   .logoimage{
+    width: 78px;
+    height: 78px;
+    margin-left: 5%;
+  }
+  .navbar {
+    background-color: rgb(0, 38, 49);
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+
   }
 }
   
