@@ -10,7 +10,7 @@
   .navbar {
 
   background-color: rgb(0, 38, 49);
- 
+  border-radius: 0px 0px 10px 10px;
   width: 100%;
   height: 80px;
   display: grid;
@@ -27,11 +27,11 @@
     
   }
   .inputbox{
-
+    border-radius:  16px;
     width: 100%;
     margin-right: 10vw;
     padding: 5px;
-
+    cursor: pointer;
     margin-top: 20px; 
 
   }
@@ -63,90 +63,39 @@
     display: flex;
     padding-top: 9px;
   }
+  .secondiv:hover{
+    color: rgb(128, 5, 145);
+  }
   .sum{
     font-size: 16px;
   }
 
   @media screen and (max-width: 900px) and (min-width: 600px) {
     .sum {font-size: 12px};
-    .secondiv{
-      background: rgb(250, 247, 247);
+    #secondiv{
       height: 50px;
-      width: 100%;
+      width: 40%;
       display: flex;
-      gap: 8px;
-      padding-top: 9px;
-
+      gap: 1px;
+      padding-top: 7px;
+      font-size: small;
       
     }
     .middlebar {
-      width: 150%;
-     margin-left: -45%;
+      width: 30%;
+     margin-left: -25%;
      display: none;
-     
    }
    .rightbar{
      align-items: center;
     display: flex;
-    column-gap: 160px;
-
-    
-    margin-right: 10px; 
+    column-gap: 60px;
+    margin-right: 5px; 
    } 
    .logoimage{
-    width: 78px;
-    height: 78px;
-    margin-left: 4%;
+    width: 48px;
+    height: 48px;
+    margin-left: 2%;
   }
-   
-  }
-  @media screen and (max-width: 600px)  {
+}
   
-    .sum {font-size: 10px};
-    .secondiv{
-      background: rgb(250, 247, 247);
-      height: 50px;
-      width: 100%;
-      display: flex;
-      gap: 5px;
-      padding-top: 9px;
-    }
-    .navbar {
-      background-color: rgb(0, 38, 49);
-      width: 100%;
-      height: 80px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      }
-    .middlebar {
-      
-     display: none;
-     
-   }
-   .rightbar{
-     align-items: center;
-    display: flex;
-    column-gap: 40px;
-
-    
-    margin-left: 5px; 
-   } 
-   .logoimage{
-    width: 78px;
-    height: 78px;
-    margin-left: 5%;
-  }
-  .navbar {
-    background-color: rgb(0, 38, 49);
-    width: 100%;
-    height: 80px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
- .dropmenu{
-    display: flex;
-    
- }
- 

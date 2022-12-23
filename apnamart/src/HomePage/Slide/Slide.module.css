@@ -2,16 +2,13 @@
 .mancan{
     display: flex;
     height:24rem;
-    /* border:1px solid red; */
-    /* width:100%; */
-    /* margin-bottom: 1rem; */
+
 }
 
 .Mobilemancan{
     display: flex;
     height:24rem;
-    /* border:1px solid red; */
-    /* width:100%; */
+   
     margin-bottom: 1rem;
     
 }
@@ -20,14 +17,13 @@
     justify-content: space-between;
 }
 .cleft{
-    /* border:1px solid red; */
     height:4rem;
     width:2rem;
     margin: auto;
     cursor: progress;
 }
 .cright{
-    /* border:1px solid red; */
+
     height:4rem;
     width:2rem;
     margin: auto;
@@ -59,13 +55,13 @@
     
     
 }
-/* editing after confirm to reduce overlap */
+
 .Mobilecan{
     width:69rem;
     height:24rem;
 }
 .grow{
-    /* border: 1px solid gray; */
+
     display: flex;
     border-radius: 0.5rem;
     margin:1rem;
@@ -89,8 +85,6 @@
     border-radius: 0.5rem;
 }
 .reso{
-
-    /* border:1px solid green; */
     height:8rem;
     width:8rem;
 
@@ -98,8 +92,8 @@
 }
 .reso:hover {
     overflow: hidden;
-    -ms-transform: scale(1); /* IE 9 */
-  -webkit-transform: scale(1); /* Safari 3-8 */
+    -ms-transform: scale(1); 
+  -webkit-transform: scale(1); 
   transform: scale(1.1);
   }
 .discountdiv{
@@ -135,7 +129,7 @@
     overflow: hidden;
     margin-left: 1rem;
     margin-bottom: 0.1rem;
-    /* border:1px solid rgb(158, 25, 158); */
+  
 }
 .mrp{
     display: inline-block;
