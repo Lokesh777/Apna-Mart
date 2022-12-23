@@ -28,13 +28,37 @@
   }
   .inputbox{
 
-    width: 100%;
-    margin-right: 10vw;
+    width: 80%;
+    /* margin-right: 10vw; */
     padding: 5px;
-
+   border-inline-color: white;
+   color:aliceblue;
     margin-top: 20px; 
 
   }
+   .inputboxBtn{
+    /* margin-right: 10vw; */
+    margin-top: 20px; 
+    color: aliceblue;
+    margin-left: 1rem ;
+   }
+   .inputboxBtn:hover{
+    background-color: rgb(21, 5, 36);
+    color: beige;
+   }
+   .ResultBox{
+    text-align: center;
+   }
+   .searchData{
+    text-align: center;
+   
+   }
+.searchData:hover{
+transform: scale(1.1);
+background-color: rgb(37, 35, 71);
+color: aliceblue;
+}
+
   .leftbar { 
     display: flex;
     align-items: center;
@@ -98,7 +122,7 @@
     height: 78px;
     margin-left: 4%;
   }
-   
+  
   }
   @media screen and (max-width: 600px)  {
   
