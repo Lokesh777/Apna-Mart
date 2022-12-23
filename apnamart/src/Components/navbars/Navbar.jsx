@@ -54,21 +54,32 @@ const Navbar = () => {
   const [state, dispatch] = useReducer(SearchReducer, initValue);
 
   const [prod,setProd] = useState("");
-
-  // console.log(state.data.map((ele)=>ele.title),"Data is Here")
+  let bag = null
 
   const GoToSearch = (title) =>{
-    let bag = title||[]
+    bag= title;
     localStorage.setItem('ProductName', bag);
     navigate("product");
+   
   }
 
+
   const SearchReturn = (item) => {
-    
-    return(<div className={styles.searchData} 
-  onClick={()=>GoToSearch(item.title)}
-  key={item.title}> {item.title}</div>
-)}
+   
+    return(
+    <div 
+       className={styles.searchData} 
+       onClick={()=>GoToSearch(item.title)}
+       key={item.title}> 
+       {item.title}
+    </div>
+   )
+}
+
+
+const handleChange = (e)=> {
+      setProd(e.target.value);
+}
 
   return (
     <div className={styles.mainNavbar}>
@@ -78,6 +89,7 @@ const Navbar = () => {
       
 
       <nav className={styles.navbar}>
+      
         <div className={styles.leftbar}>
           <Button
             className={styles.sidebtn}
@@ -243,20 +255,19 @@ const Navbar = () => {
             <Flex>
             
              <Input
-             value={prod}
-             onChange={(e)=>setProd(e.target.value)}
+              value={prod}
+              onChange={handleChange}
               className={styles.inputbox}
               type="text"
               placeholder="Search essentials, groceries,and more ..."
             />
               <Button  
-              onClick={()=>SearchProd(dispatch,prod)}
-              className={styles.inputboxBtn}
-              // colorScheme='teal'/
-               variant='outline'>
+                onClick={()=>SearchProd(dispatch,prod)}
+                className={styles.inputboxBtn}
+                // colorScheme='teal'/
+                variant='outline'>
                <SearchIcon color='white' />
               </Button>
-
               </Flex>
           </Hide>
         </div>
