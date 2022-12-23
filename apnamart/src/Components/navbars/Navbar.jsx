@@ -9,7 +9,6 @@ import { HiLocationMarker } from "react-icons/hi";
 import { ChevronDownIcon, ChevronUpIcon, SearchIcon } from "@chakra-ui/icons";
 // import data from "../../Product Page/freshFruits.json";
 
-
 import {
   Drawer,
   DrawerBody,
