@@ -4,7 +4,6 @@ import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-
 import {useContext} from "react";
 import { TotalContext } from "../Context/TotalContext";
 const Basket = () => {
