@@ -30,7 +30,7 @@ import {
   Input,
 } from "@chakra-ui/react";
 
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
 import { SearchReducer } from "../Reducer/reducer";
 import { SearchProd } from "../Reducer/action";
 
@@ -244,7 +244,7 @@ const handleChange = (e)=> {
 
           {/* logo image  */}
           <Link to="/">
-            <img className={styles.logoimage} src="apnamart.gif" alt="Logo" />
+            <img className={styles.logoimage} src="apnamartt.gif" alt="Logo" />
           </Link>
 
         </div>

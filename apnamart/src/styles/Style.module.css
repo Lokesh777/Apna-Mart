@@ -43,7 +43,7 @@
     margin-left: 1rem ;
    }
    .inputboxBtn:hover{
-    background-color: rgb(21, 5, 36);
+    /* background-color: rgb(21, 5, 36); */
     color: beige;
    }
    .ResultBox{
