@@ -51,6 +51,7 @@ const AllProducts = ({headerImage , cartdata}) => {
   // --------- Posted the Cart Data Successfully ----------
 
   const [fruit, setFruit] = useState([]);
+  const [category, setCategory] = useState("fruit&Vegi")
   const [state ,
     //  setState
   ] = useState(true);
@@ -63,19 +64,10 @@ const AllProducts = ({headerImage , cartdata}) => {
 
   const getData = async () =>{
      try{
-        let res = await axios("https://apnamart-backend.onrender.com/products/fruit");
+        let res = await axios(`https://apnamart-backend.onrender.com/products?type=${category}`);
         let data = res.data;
-        // let freshFruis = data[0].freshFruis;
-        console.log(data)
-        // let Electronics = data.Electronics;
-        let fruit = data.fruit;
-        // let premium = data[0].premiumFruits;
-         setFruit(fruit);
-        // setFreshFruit(freshFruis);
-        // setPremium(premium)
-
-        
-     } 
+       setFruit(data);
+    } 
      catch (e) {
          console.log(e);
      } 

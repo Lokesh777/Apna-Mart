@@ -4,7 +4,7 @@ export const SearchFailureAction = { type: "Search_Failure" };
 
 export const SearchProd = (dispatch, query) => {
   dispatch(SearchLoadingAction);
-  fetch(`https://apnamart-backend.onrender.com/products/fruit?&q=${query}`)
+  fetch(`https://apnamart-backend.onrender.com/products?q=${query}`)
     .then((res) => res.json())
     .then((res) => {
         // console.log("query data avaial",res.fruit)
