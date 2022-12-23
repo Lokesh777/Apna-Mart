@@ -30,7 +30,7 @@
 
     border-radius:  16px;
     width: 100%;
-    margin-right: 10vw;
+    /* margin-right: 10vw; */
     padding: 5px;
     cursor: pointer;
 
@@ -136,6 +136,7 @@ color: aliceblue;
   }
   
   }
+
   @media screen and (max-width: 600px)  {
   
     .sum {font-size: 10px};
@@ -181,5 +182,5 @@ color: aliceblue;
     }
 
   }
-}
+
   

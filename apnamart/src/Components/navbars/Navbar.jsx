@@ -6,10 +6,9 @@ import { HiUser } from "react-icons/hi";
 import { FaUserCircle } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 import { HiLocationMarker } from "react-icons/hi";
-import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
-
 import { ChevronDownIcon, ChevronUpIcon, SearchIcon } from "@chakra-ui/icons";
 // import data from "../../Product Page/freshFruits.json";
+
 
 import {
   Drawer,
@@ -31,7 +30,7 @@ import {
   Input,
 } from "@chakra-ui/react";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"
 import { SearchReducer } from "../Reducer/reducer";
 import { SearchProd } from "../Reducer/action";
 
@@ -245,7 +244,7 @@ const handleChange = (e)=> {
 
           {/* logo image  */}
           <Link to="/">
-            <img className={styles.logoimage} src="apnamartt.gif" alt="Logo" />
+            <img className={styles.logoimage} src="apnamart.gif" alt="Logo" />
           </Link>
 
         </div>
@@ -260,8 +259,7 @@ const handleChange = (e)=> {
               onChange={handleChange}
               className={styles.inputbox}
               type="text"
-              placeholder="Search essentials, groceries,and more ...                                                                               🔍"
-            
+              placeholder="Search essentials, groceries,and more ..."
             />
               <Button  
                 onClick={()=>SearchProd(dispatch,prod)}
@@ -279,20 +277,14 @@ const handleChange = (e)=> {
           <Link to="/login" >   <flex className={styles.flexbar}>
             <HiUser fontSize={"25px"} color="white" />
 
-            <Text marginTop={"3%"}>
+            <Text marginTop={"3%"} >
               Login
             </Text>
           </flex>  </ Link>
 
           <flex className={styles.flexbar}>
-            <CiShoppingCart fontSize={"30px"} color="white"/>
+            <CiShoppingCart fontSize={"30px"} color={"white"} />
             <Link to="/cart">
-
-            <Text marginTop={"5%"} marginLeft={"2"}>
-              Cart
-            </Text>
-            </Link>     
-
               <Text marginTop={"5%"} marginLeft={"2"}>
                 Cart
               </Text>
@@ -306,17 +298,12 @@ const handleChange = (e)=> {
         {state.data.map(SearchReturn)}
       </div>
 
-      <div className={styles.secondiv} columns={{ base: 1, sm: 2, md: 3 }}>
-        <Flex fontSize={"14"} gap={{ lg: "5px" }} width={"8%"}  marginLeft={{ lg: "10px", md: "5px", sm: "2px" }}>
-          <HiLocationMarker fontSize={"30px"} color={"grey"} _hover="#880ED4"/>
-
       <div className={styles.secondiv}>
         <Flex fontSize={"14"} gap={{ lg: "5px" }} width={"8%"} marginLeft={{ lg: "10px", md: "5px", sm: "2px" }}>
           <HiLocationMarker fontSize={"30px"} color={"grey"} />
-
           <Text
-            marginLeft={{ lg: "0px", md: "5px", sm: "2px" }}
-            fontSize={{ lg: "14px", md: "8px", sm: "4px" }}
+            marginLeft={{ lg: "10px", md: "5px", sm: "2px" }}
+            fontSize={{ lg: "14px", md: "12px", sm: "10px" }}
           >
             Deliver to 400020
           </Text>
