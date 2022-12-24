@@ -11,7 +11,9 @@ root.render(
  <BrowserRouter>
   <ChakraProvider>
     <TotalContextProvider>
+
     <App />
+    
     </TotalContextProvider>
    
     </ChakraProvider>
