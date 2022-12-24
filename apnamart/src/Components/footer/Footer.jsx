@@ -89,7 +89,7 @@ export default function LargeWithAppLinksAndSocial() {
           >
             <ListHeader>CUSTOMER SERVICES</ListHeader>
             <Link to={"https://www.jiomart.com/about-us"}>About Us</Link>
-            <Link to={"#"}>FAQ</Link>
+            <Link to={"https://www.jiomart.com/faqs"}>FAQ</Link>
             <Link to={"#"}>Terms and conditions</Link>
             <Link to={"#"}>Privacy policy</Link>
             <Link to={"#"}>E-waste Policy</Link>
@@ -97,20 +97,20 @@ export default function LargeWithAppLinksAndSocial() {
           </Stack>
 
           <Stack
-          // alignItems={"self-start"}
             align={"flex-start"}
             color={"white"}
             fontFamily={"sans-serif"}
             fontSize={"0.8rem"}
           >
             <ListHeader>CONTACT US</ListHeader>
-            <Link to={"#"}>WhtasApp us : 70003 70003</Link>
+            <Link to={"#"}>WhtasApp us : <b color={"#89CFF0"}>70003 70003</b></Link>
             <Link to={"#"}>Call Us : 1800 890 1222</Link>
             <Link to={"#"}>8:00 AM to 8:00 PM, 365 days</Link>
             <Link to={"#"}>
               Please note that you are accessing the BETA Version of
               www.jiomart.com
             </Link>
+            <br/>
             <Link to={"#"} >
               Should you encounter any bugs, glitches, lack of functionality,
               delayed deliveries, billing errors or other problems on the beta
@@ -120,7 +120,7 @@ export default function LargeWithAppLinksAndSocial() {
             <ListHeader color={"white"} fontSize={"bold"}>
               DOWNLOAD APPS
             </ListHeader>
-            <Flex width={"35%"} >
+            <Flex width={"35%"} marginTop={"10px"}>
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHUwqPViAb_9pi_Qfp_JfWqbIYfb2RqD68A&usqp=CAU" alt="" />
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvIxqWzg96N3lKYiagEsP6XZBgjUZhCe_Y5g&usqp=CAU" alt="" />
                 
@@ -148,7 +148,7 @@ export default function LargeWithAppLinksAndSocial() {
             Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari
             5.1.5+, Google Chrome 80+
           </Text>
-          <Text color={"white"}>© 2022 All rights reserved. Reliance Retail Ltd</Text>
+          <Text color={"white"}>© 2022 All rights reserved. Reliance Retail Ltd.</Text>
           
         </Container>
       </Box>

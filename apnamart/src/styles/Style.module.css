@@ -182,4 +182,11 @@ color: aliceblue;
 
   }
 
-  
+  .about{
+    width: 70%;
+    align-items: center;
+
+}
+.hh{
+    align-items: left;
+}

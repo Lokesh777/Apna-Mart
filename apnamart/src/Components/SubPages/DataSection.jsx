@@ -81,11 +81,7 @@ export const DataSection = ({ headerImage, cartdata }) => {
           />
         </HStack>
       </Flex>
-      <Box w="100%" bg="white" >
-        {/* <Heading p="10px 15px" fontSize="14px">
-          ALL PRODUCTS
-        </Heading> */}
-        
+      <Box w="100%" bg="white" >  
         <AllProducts />
       </Box>
     </Box>

@@ -1,9 +1,6 @@
 import { Box, Link, Text } from "@chakra-ui/react";
 import React from "react";
-
-
-const ApplyCoupon = () => {
- 
+const ApplyCoupon = () => { 
   return (
     <Box w="96%" borderRadius="2" m="auto" pl={{ md: 4 }} textAlign={"start"}>
       <Box w="90%" m="5" >

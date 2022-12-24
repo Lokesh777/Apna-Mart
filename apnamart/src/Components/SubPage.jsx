@@ -14,6 +14,7 @@ export const SubPage = ({ headerImage, menudata, cartdata }) => {
       mb="24px"
       p="16px 0px 16px 0px"
     >
+      
 <DataSection headerImage={headerImage} cartdata={cartdata}/>
 
     </Box>
