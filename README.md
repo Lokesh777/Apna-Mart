@@ -51,3 +51,13 @@ NodeJs
 
 - Integrated all the pages successfully.
 - Developed the Payment page,Cart Page , Login/Signup Page.
+
+## Type 
+premiumFruits
+electronics
+fruit&Vegi
+freshFruits
+
+## Sort By Price
+asc 
+dsc
