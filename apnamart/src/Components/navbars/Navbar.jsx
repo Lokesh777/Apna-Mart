@@ -7,9 +7,6 @@ import { FaUserCircle } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 import { HiLocationMarker } from "react-icons/hi";
 import { ChevronDownIcon, ChevronUpIcon, SearchIcon } from "@chakra-ui/icons";
-// import data from "../../Product Page/freshFruits.json";
-
-
 import {
   Drawer,
   DrawerBody,
@@ -47,14 +44,10 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   let navigate = useNavigate();
   const {
-    // isOpenOne,
     onOpenTwo, onCloseThree } = useDisclosure();
   const [placement,
-    //  setPlacement
   ] = React.useState("left");
-
   const [state, dispatch] = useReducer(SearchReducer, initValue);
-
   const [prod,setProd] = useState("");
   let bag = null
 

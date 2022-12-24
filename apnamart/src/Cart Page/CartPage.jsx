@@ -6,9 +6,7 @@ import Basket from "./Basket"
 import ApplyCoupon from './ApplyCoupon';
 import PaymentDetails from './PaymentDetails';
 import Navbar from '../Components/navbars/Navbar';
-
 const CartPage = () => {
-
   return (
     <Box w="100%" >
       <Navbar />

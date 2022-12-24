@@ -5,19 +5,12 @@ import { TotalContext } from "../Context/TotalContext";
 import { Link } from "react-router-dom";
 const PaymentDetails = () => {
   const {total
-    //  , setTotal
     } = useContext(TotalContext);
-
   useEffect(() =>{
-
   },[total]);
-  
   return (
     <Box w="96%" m="auto" pos={"sticky"} top="1" zIndex="5" >
- <Box 
-     borderRadius="2" w="100%"
-     
-      m="auto" mt="10" >
+ <Box borderRadius="2" w="100%" m="auto" mt="10" >
       <Box w="90%" m="auto" mt="6"  >
 
         <Text fontSize={"18px"}
