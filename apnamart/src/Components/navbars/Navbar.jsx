@@ -41,6 +41,8 @@ const initValue = {
   token: ""
 };
 
+
+
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   let navigate = useNavigate();
@@ -59,10 +61,8 @@ const Navbar = () => {
   const GoToSearch = (title) =>{
     bag= title;
     localStorage.setItem('ProductName', bag);
-    navigate("product");
-   
+    navigate("product");   
   }
-
 
   const SearchReturn = (item) => {
    

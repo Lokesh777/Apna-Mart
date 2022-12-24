@@ -66,15 +66,9 @@ const AllProducts = ({headerImage , cartdata}) => {
         let res = await axios("https://apnamart-backend.onrender.com/products/fruit");
         let data = res.data;
         // let freshFruis = data[0].freshFruis;
-        console.log(data)
-        // let Electronics = data.Electronics;
+        console.log(data);
         let fruit = data.fruit;
-        // let premium = data[0].premiumFruits;
          setFruit(fruit);
-        // setFreshFruit(freshFruis);
-        // setPremium(premium)
-
-        
      } 
      catch (e) {
          console.log(e);
@@ -87,9 +81,15 @@ const AllProducts = ({headerImage , cartdata}) => {
   useEffect(() =>{
    getData();
   },[])
+
+  
+  // const [items, setItems] = useState([]);
+
+  // const items = JSON.parse(localStorage.getItem('ProductName'));
+ 
+// console.log("get back to home",items);
+
   return (
-   
-       
       <Box w="97%"  m="auto">
         <Heading mb="16px" fontSize={"16px"} mt="1">All Products</Heading>
         <Grid
@@ -199,7 +199,6 @@ const AllProducts = ({headerImage , cartdata}) => {
           ))}
         </Grid>
       </Box>
-   
   );
 };
 
