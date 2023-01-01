@@ -9,7 +9,7 @@ export default function TotalContextProvider ({children}){
  
     const [emails, setEmails] = useState("");
    
+    const [query, setQuery] = useState("");
 
-
-    return <TotalContext.Provider value ={{total , setTotal, emails,  setEmails}}>{children}</TotalContext.Provider>
+    return <TotalContext.Provider value ={{total ,query,setQuery, setTotal, emails,  setEmails}}>{children}</TotalContext.Provider>
 }

@@ -8,10 +8,11 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useContext } from "react";
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { useEffect } from "react";
+import { TotalContext } from "../Context/TotalContext";
 
 const AllProducts = ({headerImage , cartdata}) => {
 
@@ -19,8 +20,8 @@ const AllProducts = ({headerImage , cartdata}) => {
   // ------------ Posting the Cart Data --------------
    const postCart = async(ele) =>{
     let {image, button,title,price} = ele;
-    console.log(image,button,title,price)
-   console.log(ele)
+    // console.log(image,button,title,price)
+  //  console.log(ele)s
     
     try{
      
@@ -51,7 +52,7 @@ const AllProducts = ({headerImage , cartdata}) => {
   // --------- Posted the Cart Data Successfully ----------
 
   const [fruit, setFruit] = useState([]);
-  const [category, setCategory] = useState("fruit&Vegi")
+  const [category, setCategory] = useState("fruitAndVegi")
   const [state ,
     //  setState
   ] = useState(true);
@@ -60,21 +61,20 @@ const AllProducts = ({headerImage , cartdata}) => {
     postCart(ele)
     alert(`${ele.title} Added to cart`)
   }
-  
+  const {query} = useContext(TotalContext)  
 
   const getData = async () =>{
      try{
-        let res = await axios(`https://apnamart-backend.onrender.com/products?type=${category}`);
+        let res = await axios(`https://apnamart-backend.onrender.com/products?type=${category}&q=${query}`);
         let data = res.data;
-
+  
         // let freshFruis = data[0].freshFruis;
-        console.log(data);
-        let fruit = data.fruit;
+        console.log(data,"adat hai data ki");
+        let fruit = data;
          setFruit(fruit);
      } 
 
-       setFruit(data);
-    } 
+      
 
      catch (e) {
          console.log(e);
@@ -97,7 +97,7 @@ const AllProducts = ({headerImage , cartdata}) => {
 
   return (
       <Box w="97%"  m="auto">
-        <Heading mb="16px" fontSize={"16px"} mt="1">All Products</Heading>
+        <Heading marginTop={"2rem"} mb="26px" fontSize={"16px"} mt="1">All Products</Heading>
         <Grid
           templateColumns={{
             base: "repeat(1,1fr)",

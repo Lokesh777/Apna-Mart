@@ -7,8 +7,8 @@ export const SearchProd = (dispatch, query) => {
   fetch(`https://apnamart-backend.onrender.com/products?q=${query}`)
     .then((res) => res.json())
     .then((res) => {
-        console.log("query data avaial",res.fruit)
-      dispatch({ ...SearchSuccessAction, payload: res.fruit });
+        console.log("query data avaial",res)
+      dispatch({ ...SearchSuccessAction, payload: res });
     })
     .catch((err) => {
       dispatch(SearchFailureAction);

@@ -30,6 +30,8 @@ import {
 import { Link, useNavigate } from "react-router-dom"
 import { SearchReducer } from "../Reducer/reducer";
 import { SearchProd } from "../Reducer/action";
+import { useContext } from "react";
+import { TotalContext } from "../../Context/TotalContext";
 
 const initValue = {
   isLoading: false,
@@ -49,10 +51,11 @@ const Navbar = () => {
   ] = React.useState("left");
   const [state, dispatch] = useReducer(SearchReducer, initValue);
   const [prod,setProd] = useState("");
+  const {setQuery}= useContext(TotalContext)
   let bag = null
-
+// console.log(state,"state Data")
   const GoToSearch = (title) =>{
-    bag= title;
+    bag = title;
     localStorage.setItem('ProductName', bag);
     navigate("product");   
   }
@@ -72,8 +75,15 @@ const Navbar = () => {
 
 const handleChange = (e)=> {
       setProd(e.target.value);
+      
 }
 
+const SearchData = (e) =>{
+  e.preventDefault()
+  console.log("aff")
+  setQuery(prod)
+  SearchProd(dispatch,prod)
+}
   return (
     <div className={styles.mainNavbar}>
           {state.isLoading && <h3>...Loading</h3>}
@@ -255,7 +265,7 @@ const handleChange = (e)=> {
               placeholder="Search essentials, groceries,and more ..."
             />
               <Button  
-                onClick={()=>SearchProd(dispatch,prod)}
+                onClick={ SearchData}
                 className={styles.inputboxBtn}
                 // colorScheme='teal'/
                 variant='outline'>

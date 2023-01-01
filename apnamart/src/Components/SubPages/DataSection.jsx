@@ -19,6 +19,7 @@ export const DataSection = ({ headerImage, cartdata }) => {
      setData] = useState(cartdata);
 
   let sortdata = [...cartdata];
+  
   const handleSort = (text) => {
     if (text === "High to Low")
       sortdata.sort(
